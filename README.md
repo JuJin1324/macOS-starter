@@ -4,9 +4,9 @@
 * [Mac Terminal에서 ll 사용하기](https://blog.geun.kr/80)  
 * [Homebrew](https://brew.sh/index_ko)  
 * [Sierra IPTime PPTP VPN](https://geekcoders.tistory.com/entry/Mac-OS-X-Sierra-IPTime-PPTP-VPN)    
-*[Install MongoDB Community Edition on macOS](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/)  
-*[MySQL 설치 후 터미널에서 환경변수 설정하기](https://jason719.tistory.com/45)  
-*[macOS 터미널에서 mysql 서버 켜기 / 끄기](https://macinjune.com/all-posts/web-developing/problem-solving/macos-%ED%84%B0%EB%AF%B8%EB%84%90-mysql-%EC%84%9C%EB%B2%84-%EC%BC%9C%EA%B8%B0-%EB%81%84%EA%B8%B0/)  
+* [Install MongoDB Community Edition on macOS](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/)  
+* [MySQL 설치 후 터미널에서 환경변수 설정하기](https://jason719.tistory.com/45)  
+* [macOS 터미널에서 mysql 서버 켜기 / 끄기](https://macinjune.com/all-posts/web-developing/problem-solving/macos-%ED%84%B0%EB%AF%B8%EB%84%90-mysql-%EC%84%9C%EB%B2%84-%EC%BC%9C%EA%B8%B0-%EB%81%84%EA%B8%B0/)  
 
 ## macOS에서 유용한 단축키 정리
 ### Finder
