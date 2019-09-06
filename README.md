@@ -1,9 +1,9 @@
 # macOS-Shortcut
 
 ### bash
-*[Mac Terminal에서 ll 사용하기](https://blog.geun.kr/80)
-*[Homebrew](https://brew.sh/index_ko)
-*[Sierra IPTime PPTP VPN](https://geekcoders.tistory.com/entry/Mac-OS-X-Sierra-IPTime-PPTP-VPN)
+* [Mac Terminal에서 ll 사용하기](https://blog.geun.kr/80)  
+* [Homebrew](https://brew.sh/index_ko)  
+* [Sierra IPTime PPTP VPN](https://geekcoders.tistory.com/entry/Mac-OS-X-Sierra-IPTime-PPTP-VPN)  
 
 ## macOS에서 유용한 단축키 정리
 ### Finder
