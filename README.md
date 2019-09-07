@@ -15,6 +15,9 @@
 ### Docker
 * [Mac에서 Docker 환경구성 및 기본 사용 방법](https://bblog.tistory.com/297)
 
+### tomcat
+*[macOS Apache Tomcat 설치, 아파치 톰캣 실행 방법](https://whitepaek.tistory.com/12)
+
 ## macOS에서 유용한 단축키 정리
 ### Finder
 설명       | 단축키
