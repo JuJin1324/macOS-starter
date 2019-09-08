@@ -13,6 +13,7 @@
 * [MySQL 설치 후 터미널에서 환경변수 설정하기](https://jason719.tistory.com/45)  
 * [macOS 터미널에서 mysql 서버 켜기 / 끄기](https://macinjune.com/all-posts/web-developing/problem-solving/macos-%ED%84%B0%EB%AF%B8%EB%84%90-mysql-%EC%84%9C%EB%B2%84-%EC%BC%9C%EA%B8%B0-%EB%81%84%EA%B8%B0/)  
 * [Mysql 사용자 추가, 제거 및 권한 부여](https://cjh5414.github.io/mysql-create-user/)  
+* [mysql 적용 macOS에서 my.cnf 파일의 위치](https://code-examples.net/ko/q/a42431)  
 
 ### Docker
 * [Mac에서 Docker 환경구성 및 기본 사용 방법](https://bblog.tistory.com/297)
