@@ -34,3 +34,4 @@ command + shift + O | 도큐먼트 폴더 열기
 command + option + 전원 버튼 | Mac을 잠자기 상태로 전환 
 shift + control + 전원 버튼 | 디스플레이를 잠자기 상태로 전환
 (터미널에서) command + shift + K | 원격연결 저장 및 연결
+command + \ | 1password 찾기 
