@@ -25,7 +25,7 @@
 * [macOS Apache Tomcat 설치, 아파치 톰캣 실행 방법](https://whitepaek.tistory.com/12)
 
 ### 외부모니터 HiDPI(Retina) 설정
-* [링크](https://github.com/JuJin1324/macOS-Tips/wiki/%EC%99%B8%EB%B6%80%EB%AA%A8%EB%8B%88%ED%84%B0-HiDPI(Retina)-%EC%84%A4%EC%A0%95)
+* [Wiki Page](https://github.com/JuJin1324/macOS-Tips/wiki/%EC%99%B8%EB%B6%80%EB%AA%A8%EB%8B%88%ED%84%B0-HiDPI(Retina)-%EC%84%A4%EC%A0%95)
 
 ## macOS에서 유용한 단축키 정리
 ### Finder
