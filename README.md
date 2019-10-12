@@ -5,6 +5,9 @@
 * [Homebrew](https://brew.sh/index_ko)  
 * [Sierra IPTime PPTP VPN](https://geekcoders.tistory.com/entry/Mac-OS-X-Sierra-IPTime-PPTP-VPN)    
 
+### eGPU
+* 설명 : [링크](https://github.com/mayankk2308/purge-wrangler)
+
 ### mongoDB
 * [Install MongoDB Community Edition on macOS](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/)  
 
@@ -54,3 +57,4 @@ command + \ | 1password 찾기
 ### Homebrew
 * 설명 : macOS 용 패키지 관리자
 * 다운로드 : [링크](https://brew.sh/index_ko)
+
