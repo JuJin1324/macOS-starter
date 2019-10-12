@@ -38,3 +38,14 @@ command + option + 전원 버튼 | Mac을 잠자기 상태로 전환
 shift + control + 전원 버튼 | 디스플레이를 잠자기 상태로 전환
 (터미널에서) command + shift + K | 원격연결 저장 및 연결
 command + \ | 1password 찾기 
+
+## macOS 프로그램 목록
+### Intel Power Gadget
+* 설명 : Intel CPU 온도 및 주파수 조회
+* 다운로드 : [링크](https://software.intel.com/en-us/articles/intel-power-gadget)
+
+### logitech options
+* 설명 : logitech 키보드 및 마우스 설정
+* 다운로드 : [링크](https://www.logitech.com/ko-kr/product/options)
+
+### 
