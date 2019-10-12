@@ -48,4 +48,7 @@ command + \ | 1password 찾기
 * 설명 : logitech 키보드 및 마우스 설정
 * 다운로드 : [링크](https://www.logitech.com/ko-kr/product/options)
 
+### LG 모니터 소프트웨어
+* 다운로드 : [링크](https://www.lgservice.co.kr/search/driverSoftTotalSearchPage.do?type=3&searchKeyWord=34WK95U)
+
 ### 
