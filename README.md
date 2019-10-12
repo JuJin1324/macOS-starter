@@ -51,4 +51,6 @@ command + \ | 1password 찾기
 ### LG 모니터 소프트웨어
 * 다운로드 : [링크](https://www.lgservice.co.kr/search/driverSoftTotalSearchPage.do?type=3&searchKeyWord=34WK95U)
 
-### 
+### Homebrew
+* 설명 : macOS 용 패키지 관리자
+* 다운로드 : [링크](https://brew.sh/index_ko)
