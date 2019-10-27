@@ -36,6 +36,11 @@
 ### 해킨토시 만들기
 * [Wiki 링크](https://github.com/JuJin1324/macOS-Tips/wiki/%ED%95%B4%ED%82%A8%ED%86%A0%EC%8B%9C-%EB%A7%8C%EB%93%A4%EA%B8%B0)
 
+### Yosemite Optical disc 없이 Bootcamp 만들기
+* 1. BootCamp Assistant 우클릭 -> 컨텐츠 보기 -> info.plist 에서 `PreUSBBootModels`를 `USBBootModels`로 변경  
+-> 터미널에서 `$ sudo codesign -fs - /Applications/Utilities/Boot\ Camp\ Assistant.app` 후 BootCamp Assistant 실행 
+* 참조 : [링크](https://www.hongkiat.com/blog/install-bootcamp-without-optical-drive/)
+
 ## macOS에서 유용한 단축키 정리
 ### Finder
 설명       | 단축키
