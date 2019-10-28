@@ -1,5 +1,8 @@
 # macOS-Tips
 
+### Cross Compiler
+* 다운로드 : [링크](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads)
+
 ### bash
 * [Mac Terminal에서 ll 사용하기](https://blog.geun.kr/80)  
 * [Homebrew](https://brew.sh/index_ko)  
