@@ -12,7 +12,7 @@
 * 설명 : [링크](https://github.com/mayankk2308/purge-wrangler)
 
 ### Java
-* Homebrew를 이용한 OpenJDK 설치 : [링크](https://findstar.pe.kr/2019/01/20/install-openjdk-by-homebrew/)
+* Homebrew를 이용한 OpenJDK 설치 : [링크](https://github.com/AdoptOpenJDK/homebrew-openjdk)
 
 ### mongoDB
 * [Install MongoDB Community Edition on macOS](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/)  
