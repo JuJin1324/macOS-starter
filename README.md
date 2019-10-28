@@ -69,3 +69,24 @@ command + \ | 1password 찾기
 * 설명 : macOS 용 패키지 관리자
 * 다운로드 : [링크](https://brew.sh/index_ko)
 
+### Team Viewer
+* 다운로드 : [링크](https://www.teamviewer.com/ko/?pid=google.tv.brand_kr_sn_desk_brand_tvmisspeling_ex.s.kr&gclid=CjwKCAjwo9rtBRAdEiwA_WXcFg9kQijYi_D-jnZm7HycSunseac4sPvkmqs7g2RngzwQhjJvTWpqwRoCJ20QAvD_BwE)
+
+### App Cleaner
+* 다운로드 : [링크](https://freemacsoft.net/appcleaner/)
+
+### Folx
+* 다운로드 : [링크](https://mac.eltima.com/ko/download-manager.html)
+
+### beats update
+* 다운로드 : [링크](https://www.beatsbydre.com/kr/support/how-to/firmware-updates-beats-updater)
+
+### Packet Sender
+* 다운로드 : [링크](https://packetsender.com/download)
+
+### 
+* 다운로드 : [링크]()
+
+### 
+* 다운로드 : [링크]()
+
