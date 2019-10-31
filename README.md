@@ -3,6 +3,7 @@
 ### Homebrew
 * 공식페이지 : [링크](https://brew.sh/index_ko)
 * 참조페이지 : [링크](https://m.blog.naver.com/PostView.nhn?blogId=sarang2594&logNo=221246170677&proxyReferer=https%3A%2F%2Fwww.google.com%2F)
+* brew 패키지 관리하기 : [링크](https://rkjun.wordpress.com/2013/07/14/os-x-missing-package-manager-home-brew/)
 * Homebrew를 이용한 OpenJDK 설치 : [링크](https://github.com/AdoptOpenJDK/homebrew-openjdk)
 * Homebrew를 이용한 adb 설치 : [링크](https://stackoverflow.com/questions/31374085/installing-adb-on-macos)
 
