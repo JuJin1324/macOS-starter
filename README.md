@@ -1,5 +1,12 @@
 # macOS-Tips
 
+### Homebrew
+* 공식페이지 : [링크](https://brew.sh/index_ko)
+* 참조페이지 : [링크](https://m.blog.naver.com/PostView.nhn?
+blogId=sarang2594&logNo=221246170677&proxyReferer=https%3A%2F%2Fwww.google.com%2F)
+* Homebrew를 이용한 OpenJDK 설치 : [링크](https://github.com/AdoptOpenJDK/homebrew-openjdk)
+* Homebrew를 이용한 adb 설치 : [링크](https://stackoverflow.com/questions/31374085/installing-adb-on-macos)
+
 ### Cross Compiler
 * 다운로드 : [링크](https://github.com/ARMmbed/homebrew-formulae)
 
@@ -10,9 +17,6 @@
 
 ### eGPU
 * 설명 : [링크](https://github.com/mayankk2308/purge-wrangler)
-
-### Java
-* Homebrew를 이용한 OpenJDK 설치 : [링크](https://github.com/AdoptOpenJDK/homebrew-openjdk)
 
 ### mongoDB
 * [Install MongoDB Community Edition on macOS](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/)  
