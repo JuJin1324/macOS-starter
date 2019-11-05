@@ -1,5 +1,9 @@
 # macOS-Tips
 
+### zsh에서 ll 및 컬러 등을 바꿔보자
+* Oh My Zsh : [github](https://github.com/robbyrussell/oh-my-zsh)
+* macOs - OS 업데이트 후 git 등 오류 발생 시 솔루션 : [링크](http://redutan.github.io/2015/10/05/osx-after-update-git-error)
+
 ### Homebrew
 * 공식페이지 : [링크](https://brew.sh/index_ko)
 * 참조페이지 : [링크](https://m.blog.naver.com/PostView.nhn?blogId=sarang2594&logNo=221246170677&proxyReferer=https%3A%2F%2Fwww.google.com%2F)
