@@ -16,7 +16,6 @@
 
 ### bash
 * [Mac Terminal에서 ll 사용하기](https://blog.geun.kr/80)  
-* [Homebrew](https://brew.sh/index_ko)  
 * [Sierra IPTime PPTP VPN](https://geekcoders.tistory.com/entry/Mac-OS-X-Sierra-IPTime-PPTP-VPN)    
 
 ### eGPU
