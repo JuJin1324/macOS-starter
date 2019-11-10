@@ -93,3 +93,6 @@ command + \ | 1password 찾기
 
 ### Docker
 * 다운로드 : [링크](https://hub.docker.com/?overlay=onboarding)
+
+### VMWare Fusion
+* 다운로드 : [링크](https://www.vmware.com/kr/products/fusion/fusion-evaluation.html)
