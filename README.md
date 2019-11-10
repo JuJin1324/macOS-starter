@@ -11,14 +11,6 @@
 * Homebrew를 이용한 OpenJDK 설치 : [링크](https://github.com/AdoptOpenJDK/homebrew-openjdk)
 * Homebrew를 이용한 adb 설치 : [링크](https://stackoverflow.com/questions/31374085/installing-adb-on-macos)
 
-### Cross Compiler
-* 다운로드
-```bash
-$ brew pull 45780
-$ brew search gcc-arm-none-eabi
-$ brew install gcc-arm-none-eabi
-```
-
 ### bash
 * [Mac Terminal에서 ll 사용하기](https://blog.geun.kr/80)  
 * [Sierra IPTime PPTP VPN](https://geekcoders.tistory.com/entry/Mac-OS-X-Sierra-IPTime-PPTP-VPN)    
