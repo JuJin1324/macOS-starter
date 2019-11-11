@@ -96,3 +96,6 @@ command + \ | 1password 찾기
 
 ### VMWare Fusion
 * 다운로드 : [링크](https://www.vmware.com/kr/products/fusion/fusion-evaluation.html)
+
+### Visual Studio Code
+* 다운로드 : [링크](https://code.visualstudio.com/)
