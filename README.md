@@ -1,4 +1,4 @@
-# macOS-Tips
+# macOS & linux tips
 
 ### Docker에서 우분투 띄우기
 * docker에서 우분투 볼륨으로 사용할 디렉토리를 만든다.(예시로 `/Users/jujin/Documents/dev/docker_volume`으로 하였다)
