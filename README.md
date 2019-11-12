@@ -1,4 +1,4 @@
-# macOS & Linux tips
+# macOS tips
 
 ### zsh에서 ll 및 컬러 등을 바꿔보자
 * Oh My Zsh : [github](https://github.com/robbyrussell/oh-my-zsh)
