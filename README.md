@@ -33,7 +33,6 @@
 
 ### Docker
 * [Mac에서 Docker 환경구성 및 기본 사용 방법](https://bblog.tistory.com/297)
-* [Docker에서 우분투 띄우기](https://github.com/JuJin1324/macOS-linux-tips/wiki/Docker%EC%97%90%EC%84%9C-%EC%9A%B0%EB%B6%84%ED%88%AC-%EB%9D%84%EC%9A%B0%EA%B8%B0)
 
 ### tomcat
 * [macOS Apache Tomcat 설치, 아파치 톰캣 실행 방법](https://whitepaek.tistory.com/12)
