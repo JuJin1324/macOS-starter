@@ -2,7 +2,7 @@
 
 ### Docker에서 우분투 띄우기
 * docker에서 우분투 볼륨으로 사용할 디렉토리를 만든다.(예시로 `/Users/jujin/Documents/dev/docker_volume`으로 하였다)
-* `Dockerfile` 이란 이름의 파일 만들기
+* Dockerfile 파일 만들기
 ```bash
 # 해당 디렉터리로 이동
 $ cd ~/Documents/dev/docker_volume
@@ -21,9 +21,22 @@ EXPOSE 8000
 VOLUME ["/Users/jujin/Documents/dev/docker_volume"] 
 ```
 
-* 이미지 만들기
+* 이미지 만들기 - Dockerfile이 있는 디렉터리에서 실행
+```bash
+# docker build --rm -t [원하는 이미지 이름]
+예시) 난 arm-linux-gcc 사용을 위해서 우분투를 이용했다.
+$ docker build --rm -t arm-builder
+```
 
+* 실행
+`$ docker run -it --rm -v /Users/jujin/Documents/dev/docker_volume arm-builder`
 
+* docker container 내부에서 실행
+```bash
+$ apt-get udpate
+$ apt-get install vim
+$ apt-get install openssh-server
+```
 * 참고사이트 : [링크](https://www.slideshare.net/iFunFactory/docker-linux-linux-66590915)
 
 ### zsh에서 ll 및 컬러 등을 바꿔보자
