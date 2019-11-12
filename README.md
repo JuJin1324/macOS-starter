@@ -1,44 +1,5 @@
 # macOS & Linux tips
 
-### Docker에서 우분투 띄우기
-* docker에서 우분투 볼륨으로 사용할 디렉토리를 만든다.(예시로 `/Users/jujin/Documents/dev/docker_volume`으로 하였다)
-* Dockerfile 파일 만들기
-```bash
-# 해당 디렉터리로 이동
-$ cd ~/Documents/dev/docker_volume
-
-# 파일 만들기
-$ vi Dockerfile
-```
-* Dockerfile의 내용
-```text
-FROM ubuntu:16.04
-RUN apt-get -qq update \
-	&& apt-get -qq install -y g++ cmake \
-	&& apt-get clean
-
-EXPOSE 8000
-VOLUME ["/Users/jujin/Documents/dev/docker_volume"] 
-```
-
-* 이미지 만들기 - Dockerfile이 있는 디렉터리에서 실행
-```bash
-# docker build --rm -t [원하는 이미지 이름]
-예시) 난 arm-linux-gcc 사용을 위해서 우분투를 이용했다.
-$ docker build --rm -t arm-builder
-```
-
-* 실행
-`$ docker run -it --rm -v /Users/jujin/Documents/dev/docker_volume arm-builder`
-
-* docker container 내부에서 실행
-```bash
-$ apt-get udpate
-$ apt-get install vim
-$ apt-get install openssh-server
-```
-* 참고사이트 : [링크](https://www.slideshare.net/iFunFactory/docker-linux-linux-66590915)
-
 ### zsh에서 ll 및 컬러 등을 바꿔보자
 * Oh My Zsh : [github](https://github.com/robbyrussell/oh-my-zsh)
 * macOs - OS 업데이트 후 git 등 오류 발생 시 솔루션 : [링크](http://redutan.github.io/2015/10/05/osx-after-update-git-error)
@@ -72,6 +33,7 @@ $ apt-get install openssh-server
 
 ### Docker
 * [Mac에서 Docker 환경구성 및 기본 사용 방법](https://bblog.tistory.com/297)
+* [Docker에서 우분투 띄우기](https://github.com/JuJin1324/macOS-linux-tips/wiki/Docker%EC%97%90%EC%84%9C-%EC%9A%B0%EB%B6%84%ED%88%AC-%EB%9D%84%EC%9A%B0%EA%B8%B0)
 
 ### tomcat
 * [macOS Apache Tomcat 설치, 아파치 톰캣 실행 방법](https://whitepaek.tistory.com/12)
