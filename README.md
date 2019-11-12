@@ -1,5 +1,31 @@
 # macOS-Tips
 
+### Docker에서 우분투 띄우기
+* docker에서 우분투 볼륨으로 사용할 디렉토리를 만든다.(예시로 `/Users/jujin/Documents/dev/docker_volume`으로 하였다)
+* `Dockerfile` 이란 이름의 파일 만들기
+```bash
+# 해당 디렉터리로 이동
+$ cd ~/Documents/dev/docker_volume
+
+# 파일 만들기
+$ vi Dockerfile
+```
+* Dockerfile의 내용
+```text
+FROM ubuntu:16.04
+RUN apt-get -qq update \
+	&& apt-get -qq install -y g++ cmake \
+	&& apt-get clean
+
+EXPOSE 8000
+VOLUME ["/Users/jujin/Documents/dev/docker_volume"] 
+```
+
+* 이미지 만들기
+
+
+* 참고사이트 : [링크](https://www.slideshare.net/iFunFactory/docker-linux-linux-66590915)
+
 ### zsh에서 ll 및 컬러 등을 바꿔보자
 * Oh My Zsh : [github](https://github.com/robbyrussell/oh-my-zsh)
 * macOs - OS 업데이트 후 git 등 오류 발생 시 솔루션 : [링크](http://redutan.github.io/2015/10/05/osx-after-update-git-error)
