@@ -1,5 +1,9 @@
 # macOS tips
 
+### 키보드 지연시간 변경
+* 시스템 환경설정 -> 키보드 -> 키 반복 빠르게(MAX) / 반복 지연시간 짧게 MAX에서 한칸 아래
+* 좋은점 : 백스페이스 잘 들어서 빨리 지울 수 있음.
+
 ### zsh에서 ll 및 컬러 등을 바꿔보자
 * Oh My Zsh : [github](https://github.com/robbyrussell/oh-my-zsh)
 * macOs - OS 업데이트 후 git 등 오류 발생 시 솔루션 : [링크](http://redutan.github.io/2015/10/05/osx-after-update-git-error)
