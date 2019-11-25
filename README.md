@@ -1,5 +1,22 @@
 # macOS tips
 
+## Catalina VMWare Fusion 10 Black Screen 해결
+### SIP 해제
+* 재부팅시 cmd + R로 Recovery 모드 진입
+* 상단 유틸리티 -> 터미널
+* `# csrutil disable` 후 재시작
+* 재시작 후 터미널에서 `$ csrutil status`로 disable 됬는지 확인
+
+### 명령어 실행
+* 터미널에서 다음의 명령어들 모두 실행
+* `tccutil reset All com.vmware.fusion`
+* `sudo sqlite3 "/Library/Application Support/com.apple.TCC/TCC.db" 'insert into access values ("kTCCServiceScreenCapture", "com.vmware.fusion", 0, 1, 1, "", "", "", "UNUSED", "", 0,1565595574)'`
+* `sudo sqlite3 "/Library/Application Support/com.apple.TCC/TCC.db" 'insert into access values ("kTCCServiceListenEvent", "com.vmware.fusion", 0, 1, 1, "", "", "", "UNUSED", "", 0,1565595574)'`
+* `sudo sqlite3 "/Library/Application Support/com.apple.TCC/TCC.db" 'insert into access values ("kTCCServicePostEvent", "com.vmware.fusion", 0, 1, 1, "", "", "", "UNUSED", "", 0,1565595574)'`
+
+### VMWare Fusion 재실행
+* 끝
+
 ### 키보드 지연시간 변경
 * 시스템 환경설정 -> 키보드 -> 키 반복 빠르게(MAX) / 반복 지연시간 짧게 MAX에서 한칸 아래
 * 좋은점 : 백스페이스 잘 들어서 빨리 지울 수 있음.
