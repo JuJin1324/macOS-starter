@@ -16,6 +16,7 @@
 
 ### VMWare Fusion 재실행
 * 끝
+* 참고사이트 : [링크](https://communities.vmware.com/message/2879755#2879755)
 
 ### 키보드 지연시간 변경
 * 시스템 환경설정 -> 키보드 -> 키 반복 빠르게(MAX) / 반복 지연시간 짧게 MAX에서 한칸 아래
