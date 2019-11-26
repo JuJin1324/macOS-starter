@@ -123,3 +123,6 @@ command + \ | 1password 찾기
 
 ### Visual Studio Code
 * 다운로드 : [링크](https://code.visualstudio.com/)
+
+### JetBrain Toolbox
+* 다운로드 : [링크](https://www.jetbrains.com/toolbox-app/download/download-thanks.html)
