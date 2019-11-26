@@ -1,5 +1,8 @@
 # macOS tips
 
+### Spotlight 키 변경
+* 시스템 환경설정 -> 키보드 -> 단축키 -> Spotlight -> cmd + shift + space
+
 ## Catalina VMWare Fusion 10 Black Screen 해결
 ### SIP 해제
 * 재부팅시 cmd + R로 Recovery 모드 진입
