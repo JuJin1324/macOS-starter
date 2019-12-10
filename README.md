@@ -32,6 +32,17 @@
 * macOs - OS 업데이트 후 git 등 오류 발생 시 솔루션 : [링크](http://redutan.github.io/2015/10/05/osx-after-update-git-error)
 
 ### Homebrew
+* 자주 쓰는 옵션
+```bash
+### 설치된 패키지 리스트 확인
+$ brew list
+
+### brew에서 설치할 수 있는 패키지 검색
+$ brew search 찾고싶은패키지명
+
+### 패키지 삭제
+$ brew remove 패키지명 OR brew uninstall 패키지명
+```
 * 공식페이지 : [링크](https://brew.sh/index_ko)
 * 참조페이지 : [링크](https://m.blog.naver.com/PostView.nhn?blogId=sarang2594&logNo=221246170677&proxyReferer=https%3A%2F%2Fwww.google.com%2F)
 * brew 패키지 관리하기 : [링크](https://rkjun.wordpress.com/2013/07/14/os-x-missing-package-manager-home-brew/)
