@@ -27,59 +27,11 @@
 * 시스템 환경설정 -> 키보드 -> 키 반복 빠르게(MAX) / 반복 지연시간 짧게 MAX에서 한칸 아래
 * 좋은점 : 백스페이스 잘 들어서 빨리 지울 수 있음.
 
-### zsh에서 ll 및 컬러 등을 바꿔보자
-* Oh My Zsh : [github](https://github.com/robbyrussell/oh-my-zsh)
-* macOs - OS 업데이트 후 git 등 오류 발생 시 솔루션 : [링크](http://redutan.github.io/2015/10/05/osx-after-update-git-error)
+### Git
+* macOS - OS 업데이트 후 git 등 오류 발생 시 솔루션 : [링크](http://redutan.github.io/2015/10/05/osx-after-update-git-error)
 
-### Homebrew
-* 자주 쓰는 옵션
-```bash
-### 설치된 패키지 리스트 확인
-$ brew list
-
-### brew에서 설치할 수 있는 패키지 검색
-$ brew search 찾고싶은패키지명
-
-### 패키지 삭제
-$ brew remove 패키지명 OR brew uninstall 패키지명
-```
-* 공식페이지 : [링크](https://brew.sh/index_ko)
-* 참조페이지 : [링크](https://m.blog.naver.com/PostView.nhn?blogId=sarang2594&logNo=221246170677&proxyReferer=https%3A%2F%2Fwww.google.com%2F)
-* brew 패키지 관리하기 : [링크](https://rkjun.wordpress.com/2013/07/14/os-x-missing-package-manager-home-brew/)
-* Homebrew를 이용한 OpenJDK 설치 : [링크](https://github.com/AdoptOpenJDK/homebrew-openjdk)
-* Homebrew를 이용한 adb 설치 : [링크](https://stackoverflow.com/questions/31374085/installing-adb-on-macos)
-
-### bash
-* [Mac Terminal에서 ll 사용하기](https://blog.geun.kr/80)  
+### VPN 사용 
 * [Sierra IPTime PPTP VPN](https://geekcoders.tistory.com/entry/Mac-OS-X-Sierra-IPTime-PPTP-VPN)    
-
-### eGPU
-* 설명 : [링크](https://github.com/mayankk2308/purge-wrangler)
-
-### mongoDB
-* [Install MongoDB Community Edition on macOS](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/)  
-
-### MySQL
-* [macOS MySQL 설치 및 설정 사용법](https://whitepaek.tistory.com/16)
-* [MySQL 설치 후 터미널에서 환경변수 설정하기](https://jason719.tistory.com/45)  
-* [macOS 터미널에서 mysql 서버 켜기 / 끄기](https://macinjune.com/all-posts/web-developing/problem-solving/macos-%ED%84%B0%EB%AF%B8%EB%84%90-mysql-%EC%84%9C%EB%B2%84-%EC%BC%9C%EA%B8%B0-%EB%81%84%EA%B8%B0/)  
-* [[MySQL] 사용자 관리(추가, 삭제, 권한 부여)](https://blog.opid.kr/237)
-* [Mysql 사용자 추가, 제거 및 권한 부여](https://cjh5414.github.io/mysql-create-user/)  
-* [mysql 적용 macOS에서 my.cnf 파일의 위치](https://code-examples.net/ko/q/a42431)  
-* [OSX의 MySQL my.cnf 생성 및 UTF-8 기본값 설정](https://psage.tistory.com/entry/OSX%EC%9D%98-MySQL-mycnf-%EC%83%9D%EC%84%B1-%EB%B0%8F-UTF-8-%EA%B8%B0%EB%B3%B8%EA%B0%92-%EC%84%A4%EC%A0%95)  
-* [[DB/MariaDB/Mysql] Mysql 언어설정으로 인한 문제, 그리고 해결](https://postitforhooney.tistory.com/entry/DBMariaDBMysql-Mysql-%EC%96%B8%EC%96%B4%EC%84%A4%EC%A0%95%EC%9C%BC%EB%A1%9C-%EC%9D%B8%ED%95%9C-%EB%AC%B8%EC%A0%9C-%EA%B7%B8%EB%A6%AC%EA%B3%A0-%ED%95%B4%EA%B2%B0)  
-
-### Docker
-* [Mac에서 Docker 환경구성 및 기본 사용 방법](https://bblog.tistory.com/297)
-
-### tomcat
-* [macOS Apache Tomcat 설치, 아파치 톰캣 실행 방법](https://whitepaek.tistory.com/12)
-
-### 외부모니터 HiDPI(Retina) 설정
-* [Wiki Page](https://github.com/JuJin1324/macOS-Tips/wiki/%EC%99%B8%EB%B6%80%EB%AA%A8%EB%8B%88%ED%84%B0-HiDPI(Retina)-%EC%84%A4%EC%A0%95)
-
-### 해킨토시 만들기
-* [Wiki 링크](https://github.com/JuJin1324/macOS-Tips/wiki/%ED%95%B4%ED%82%A8%ED%86%A0%EC%8B%9C-%EB%A7%8C%EB%93%A4%EA%B8%B0)
 
 ### Yosemite Optical disc 없이 Bootcamp 만들기
 * 1. BootCamp Assistant 우클릭 -> 컨텐츠 보기 -> info.plist 에서 `PreUSBBootModels`를 `USBBootModels`로 변경  
@@ -98,10 +50,61 @@ shift + control + 전원 버튼 | 디스플레이를 잠자기 상태로 전환
 (터미널에서) command + shift + K | 원격연결 저장 및 연결
 command + \ | 1password 찾기 
 
-## macOS 프로그램 목록
+### eGPU
+* 설명 : [링크](https://github.com/mayankk2308/purge-wrangler)
+
+## macOS 사용 프로그램 정리
 ### Homebrew
 * 설명 : macOS 용 패키지 관리자
 * 다운로드 : [링크](https://brew.sh/index_ko)
+* 자주 쓰는 옵션
+```bash
+### 설치된 패키지 리스트 확인
+$ brew list
+
+### brew에서 설치할 수 있는 패키지 검색
+$ brew search 찾고싶은패키지명
+
+### 패키지 삭제
+$ brew remove 패키지명 OR brew uninstall 패키지명
+```
+* 참조페이지 : [링크](https://m.blog.naver.com/PostView.nhn?blogId=sarang2594&logNo=221246170677&proxyReferer=https%3A%2F%2Fwww.google.com%2F)
+* brew 패키지 관리하기 : [링크](https://rkjun.wordpress.com/2013/07/14/os-x-missing-package-manager-home-brew/)
+
+### Oh My Zsh
+* 설치 - `$ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
+* Oh My Zsh : [github](https://github.com/robbyrussell/oh-my-zsh)
+
+### mongoDB
+* mongoDB 설치 
+```bash
+$ brew tap mongodb/brew
+$ brew install mongodb-community@4.2
+```
+* mongoDB 실행 - `$ brew services start mongodb-community@4.2`
+* nosql booster for MongoDB 설치 - `$ brew cask install nosqlbooster-for-mongodb`
+
+* 참고 사이트
+ - [Install MongoDB Community Edition on macOS](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/)  
+
+### MySQL
+* [macOS MySQL 설치 및 설정 사용법](https://whitepaek.tistory.com/16)
+* [MySQL 설치 후 터미널에서 환경변수 설정하기](https://jason719.tistory.com/45)  
+* [macOS 터미널에서 mysql 서버 켜기 / 끄기](https://macinjune.com/all-posts/web-developing/problem-solving/macos-%ED%84%B0%EB%AF%B8%EB%84%90-mysql-%EC%84%9C%EB%B2%84-%EC%BC%9C%EA%B8%B0-%EB%81%84%EA%B8%B0/)  
+* [[MySQL] 사용자 관리(추가, 삭제, 권한 부여)](https://blog.opid.kr/237)
+* [Mysql 사용자 추가, 제거 및 권한 부여](https://cjh5414.github.io/mysql-create-user/)  
+* [mysql 적용 macOS에서 my.cnf 파일의 위치](https://code-examples.net/ko/q/a42431)  
+* [OSX의 MySQL my.cnf 생성 및 UTF-8 기본값 설정](https://psage.tistory.com/entry/OSX%EC%9D%98-MySQL-mycnf-%EC%83%9D%EC%84%B1-%EB%B0%8F-UTF-8-%EA%B8%B0%EB%B3%B8%EA%B0%92-%EC%84%A4%EC%A0%95)  
+* [[DB/MariaDB/Mysql] Mysql 언어설정으로 인한 문제, 그리고 해결](https://postitforhooney.tistory.com/entry/DBMariaDBMysql-Mysql-%EC%96%B8%EC%96%B4%EC%84%A4%EC%A0%95%EC%9C%BC%EB%A1%9C-%EC%9D%B8%ED%95%9C-%EB%AC%B8%EC%A0%9C-%EA%B7%B8%EB%A6%AC%EA%B3%A0-%ED%95%B4%EA%B2%B0)  
+* mysql mysql.sock 오류시 해결방법 : [macOS에서 homebrew로 mysql 을 깨끗하게 재설치](https://walkingfox.tistory.com/89)
+
+### Docker
+* 설치 - `$ brew cask install docker`
+* [Mac에서 Docker 환경구성 및 기본 사용 방법](https://bblog.tistory.com/297)
+
+### tomcat
+* 설치 - `$ brew install tomcat`
+* [macOS Apache Tomcat 설치, 아파치 톰캣 실행 방법](https://whitepaek.tistory.com/12)
 
 ### Open JDK 8
 ```bash
@@ -113,12 +116,10 @@ $ brew cask install adoptopenjdk8
 ### ADB
 * android platform tools
 * `$ brew cask install android-platform-tools`
+* 참조 : [링크](https://stackoverflow.com/questions/31374085/installing-adb-on-macos)
 
 ### JetBrain Toolbox
 * `$ brew cask install jetbrains-toolbox`
-
-### Docker
-* `$ brew cask install docker`
 
 ### Packet Sender
 * `$ brew cask install packetsender`
@@ -145,6 +146,9 @@ $ brew cask install adoptopenjdk8
 ### Team Viewer
 * `$ brew cask install teamviewer`
 
+### Github Desktop
+* `$ brew cask install github`
+
 ### Slack
 * 사내 메신져
 * `$ brew cask install slack`
@@ -167,5 +171,7 @@ $ brew cask install adoptopenjdk8
 
 ### Visual Studio Code
 * 다운로드 : [링크](https://code.visualstudio.com/)
+
+
 
 
