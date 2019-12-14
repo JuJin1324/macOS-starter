@@ -104,7 +104,7 @@ command + \ | 1password 찾기
 * 다운로드 : [링크](https://brew.sh/index_ko)
 
 ### Open JDK 8
-* ```bash
+```bash
 $ brew tap AdoptOpenJDK/openjdk
 $ brew cask install adoptopenjdk8
 ```
