@@ -108,6 +108,7 @@ command + \ | 1password 찾기
 $ brew tap AdoptOpenJDK/openjdk
 $ brew cask install adoptopenjdk8
 ```
+* 참조 : [링크](https://github.com/AdoptOpenJDK/homebrew-openjdk)
 
 ### ADB
 * android platform tools
