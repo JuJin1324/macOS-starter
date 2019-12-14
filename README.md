@@ -104,7 +104,10 @@ command + \ | 1password 찾기
 * 다운로드 : [링크](https://brew.sh/index_ko)
 
 ### Open JDK 8
-* `$ brew cask install adoptopenjdk8`
+* ```bash
+$ brew tap AdoptOpenJDK/openjdk
+$ brew cask install adoptopenjdk8
+```
 
 ### ADB
 * android platform tools
