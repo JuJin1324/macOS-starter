@@ -103,6 +103,13 @@ command + \ | 1password 찾기
 * 설명 : macOS 용 패키지 관리자
 * 다운로드 : [링크](https://brew.sh/index_ko)
 
+### Open JDK 8
+* `$ brew cask install adoptopenjdk8`
+
+### ADB
+* android platform tools
+* `$ brew cask install android-platform-tools`
+
 ### JetBrain Toolbox
 * `$ brew cask install jetbrains-toolbox`
 
@@ -124,8 +131,19 @@ command + \ | 1password 찾기
 * 프로그램 삭제툴
 * `$ brew cask install appcleaner`
 
+### Wireshark
+* 패킷 검사 툴
+* `$ brew cask install wireshark`
+
+### 1password
+* `$ brew cask install 1password`
+
 ### Team Viewer
 * `$ brew cask install teamviewer`
+
+### Slack
+* 사내 메신져
+* `$ brew cask install slack`
 
 ### logitech options
 * 설명 : logitech 키보드 및 마우스 설정
