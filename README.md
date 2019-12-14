@@ -1,5 +1,10 @@
 # macOS tips
 
+### 시스템 정보 확인
+* Hyper-V 지원 확인 - `$ sysctl kern.hv_support`
+* CPU 확인 - `$ sysctl -n machdep.cpu.brand_string`
+* GPU 확인 - `$ system_profiler SPDisplaysDataType`
+
 ### Spotlight 키 변경
 * 시스템 환경설정 -> 키보드 -> 단축키 -> Spotlight -> cmd + shift + space
 
