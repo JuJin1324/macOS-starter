@@ -67,6 +67,15 @@ $ brew search 찾고싶은패키지명
 
 ### 패키지 삭제
 $ brew remove 패키지명 OR brew uninstall 패키지명
+
+### brew cask : GUI 애플리케이션 설치
+$ brew cask install 애플리케이션명
+
+### 애플리케이션이 cask 저장소에 있는지 확인
+$ brew cask audit 애플리케이션명
+
+### 애플리케이션 전체 최신버전으로 업데이트
+$ brew cask upgrade
 ```
 * 참조페이지 : [링크](https://m.blog.naver.com/PostView.nhn?blogId=sarang2594&logNo=221246170677&proxyReferer=https%3A%2F%2Fwww.google.com%2F)
 * brew 패키지 관리하기 : [링크](https://rkjun.wordpress.com/2013/07/14/os-x-missing-package-manager-home-brew/)
@@ -153,6 +162,9 @@ $ brew cask install adoptopenjdk8
 * 사내 메신져
 * `$ brew cask install slack`
 
+### Visual Studio Code
+* `$ brew cask install visual-studio-code`
+
 ### logitech options
 * 설명 : logitech 키보드 및 마우스 설정
 * 다운로드 : [링크](https://www.logitech.com/ko-kr/product/options)
@@ -169,8 +181,7 @@ $ brew cask install adoptopenjdk8
 ### VMWare Fusion
 * 다운로드 : [링크](https://www.vmware.com/kr/products/fusion/fusion-evaluation.html)
 
-### Visual Studio Code
-* 다운로드 : [링크](https://code.visualstudio.com/)
+
 
 
 
