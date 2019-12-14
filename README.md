@@ -99,9 +99,33 @@ shift + control + 전원 버튼 | 디스플레이를 잠자기 상태로 전환
 command + \ | 1password 찾기 
 
 ## macOS 프로그램 목록
+### Homebrew
+* 설명 : macOS 용 패키지 관리자
+* 다운로드 : [링크](https://brew.sh/index_ko)
+
+### JetBrain Toolbox
+* `$ brew cask install jetbrains-toolbox`
+
+### Docker
+* `$ brew cask install docker`
+
+### Packet Sender
+* `$ brew cask install packetsender`
+
 ### Intel Power Gadget
 * 설명 : Intel CPU 온도 및 주파수 조회
-* 다운로드 : [링크](https://software.intel.com/en-us/articles/intel-power-gadget)
+* `$ brew cask install intel-power-gadget`
+
+### Macs Fan Control
+* 맥에서 도는 팬의 회전수 / 온도 체크
+* `$ brew cask install macs-fan-control`
+
+### App Cleaner
+* 프로그램 삭제툴
+* `$ brew cask install appcleaner`
+
+### Team Viewer
+* `$ brew cask install teamviewer`
 
 ### logitech options
 * 설명 : logitech 키보드 및 마우스 설정
@@ -110,27 +134,11 @@ command + \ | 1password 찾기
 ### LG 모니터 소프트웨어
 * 다운로드 : [링크](https://www.lgservice.co.kr/search/driverSoftTotalSearchPage.do?type=3&searchKeyWord=34WK95U)
 
-### Homebrew
-* 설명 : macOS 용 패키지 관리자
-* 다운로드 : [링크](https://brew.sh/index_ko)
-
-### Team Viewer
-* 다운로드 : [링크](https://www.teamviewer.com/ko/?pid=google.tv.brand_kr_sn_desk_brand_tvmisspeling_ex.s.kr&gclid=CjwKCAjwo9rtBRAdEiwA_WXcFg9kQijYi_D-jnZm7HycSunseac4sPvkmqs7g2RngzwQhjJvTWpqwRoCJ20QAvD_BwE)
-
-### App Cleaner
-* 다운로드 : [링크](https://freemacsoft.net/appcleaner/)
-
 ### Folx
 * 다운로드 : [링크](https://mac.eltima.com/ko/download-manager.html)
 
 ### beats update
 * 다운로드 : [링크](https://www.beatsbydre.com/kr/support/how-to/firmware-updates-beats-updater)
-
-### Packet Sender
-* 다운로드 : [링크](https://packetsender.com/download)
-
-### Docker
-* 다운로드 : [링크](https://hub.docker.com/?overlay=onboarding)
 
 ### VMWare Fusion
 * 다운로드 : [링크](https://www.vmware.com/kr/products/fusion/fusion-evaluation.html)
@@ -138,5 +146,4 @@ command + \ | 1password 찾기
 ### Visual Studio Code
 * 다운로드 : [링크](https://code.visualstudio.com/)
 
-### JetBrain Toolbox
-* 다운로드 : [링크](https://www.jetbrains.com/toolbox-app/download/download-thanks.html)
+
