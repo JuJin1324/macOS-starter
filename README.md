@@ -1,5 +1,18 @@
 # macOS tips
 
+### RNDIS 활성화
+* SIP 비활성화 : 
+    - 맥 재부팅 시에 cmd + R 을 통한 복구모드 진입 -> 상위 메뉴 -> 유틸리티 -> 터미널
+    - `# csrutil disable` 후 재부팅
+    - 일반 부팅 후에 터미널에서 `$ csrutil status`로 disable 됬는지 확인
+* 맥용 rndis driver 설치 : `$ brew cask install horndis`
+* kext 파일 로드 : `$ sudo kextload /Library/Extensions/HoRNDIS.kext`
+* 시스템 환경설정 -> 네트워크에서 RNDIS 기기가 연결된 것으로 보이면 성공 안보이면 HoRNDIS.kext 파일 리로드
+    - `$ sudo kextunload /Library/Extensions/HoRNDIS.kext`
+    - `$ sudo kextload /Library/Extensions/HoRNDIS.kext`
+* 참고 사이트 
+    - [horndis 패키지 다운로드 사이트](https://joshuawise.com/horndis#mavericks)
+
 ### 시스템 정보 확인
 * Hyper-V 지원 확인 - $ `sysctl kern.hv_support`
 * CPU 확인 - $ `sysctl -n machdep.cpu.brand_string`
