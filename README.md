@@ -12,7 +12,7 @@
 ### SIP 해제
 * 재부팅시 cmd + R로 Recovery 모드 진입
 * 상단 유틸리티 -> 터미널
-* # `csrutil disable` 후 재시작
+* `# csrutil disable` 후 재시작
 * 재시작 후 터미널에서 `$ csrutil status`로 disable 됬는지 확인
 
 ### 명령어 실행
