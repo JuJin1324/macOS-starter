@@ -173,6 +173,10 @@ $ brew cask install adoptopenjdk8
 ### Visual Studio Code
 * `$ brew cask install visual-studio-code`
 
+### Mounty
+* NTFS 쓰기 for macOS
+* $ `brew cask install mounty`
+
 ### logitech options
 * 설명 : logitech 키보드 및 마우스 설정
 * 다운로드 : [링크](https://www.logitech.com/ko-kr/product/options)
