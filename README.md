@@ -116,8 +116,6 @@ $ brew install mongodb-community@4.2
 
 ### Docker
 * 설치 - $ `brew cask install docker`
-* [Mac에서 Docker 환경구성 및 기본 사용 방법](https://bblog.tistory.com/297)
-* Docker에서 지원하지 않는 CPU의 경우 - $ `brew cask install docker-toolbox` 설치해보는건 어떨까..(아직 확인 못함)
 
 ### tomcat
 * 설치 - $ `brew install tomcat`
