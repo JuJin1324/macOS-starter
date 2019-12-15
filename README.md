@@ -12,7 +12,7 @@
 ### SIP 해제
 * 재부팅시 cmd + R로 Recovery 모드 진입
 * 상단 유틸리티 -> 터미널
-* `# csrutil disable` 후 재시작
+* # `csrutil disable` 후 재시작
 * 재시작 후 터미널에서 `$ csrutil status`로 disable 됬는지 확인
 
 ### 명령어 실행
@@ -41,7 +41,7 @@
 
 ### Yosemite Optical disc 없이 Bootcamp 만들기
 * 1. BootCamp Assistant 우클릭 -> 컨텐츠 보기 -> info.plist 에서 `PreUSBBootModels`를 `USBBootModels`로 변경  
--> 터미널에서 `$ sudo codesign -fs - /Applications/Utilities/Boot\ Camp\ Assistant.app` 후 BootCamp Assistant 실행 
+-> 터미널에서 $ `sudo codesign -fs - /Applications/Utilities/Boot\ Camp\ Assistant.app` 후 BootCamp Assistant 실행 
 * 참조 : [링크](https://www.hongkiat.com/blog/install-bootcamp-without-optical-drive/)
 
 ## macOS에서 유용한 단축키 정리
@@ -96,14 +96,14 @@ $ brew cask upgrade
 $ brew tap mongodb/brew
 $ brew install mongodb-community@4.2
 ```
-* mongoDB 실행 - `$ brew services start mongodb-community@4.2`
-* nosql booster for MongoDB 설치 - `$ brew cask install nosqlbooster-for-mongodb`
+* mongoDB 실행 - $ `brew services start mongodb-community@4.2`
+* nosql booster for MongoDB 설치 - $ `brew cask install nosqlbooster-for-mongodb`
 
 * 참고 사이트
  - [Install MongoDB Community Edition on macOS](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/)  
 
 ### MySQL
-* `$ brew cask install mysql`
+* $ `brew cask install mysql`
 * [macOS MySQL 설치 및 설정 사용법](https://whitepaek.tistory.com/16)
 * [MySQL 설치 후 터미널에서 환경변수 설정하기](https://jason719.tistory.com/45)  
 * [macOS 터미널에서 mysql 서버 켜기 / 끄기](https://macinjune.com/all-posts/web-developing/problem-solving/macos-%ED%84%B0%EB%AF%B8%EB%84%90-mysql-%EC%84%9C%EB%B2%84-%EC%BC%9C%EA%B8%B0-%EB%81%84%EA%B8%B0/)  
@@ -115,12 +115,12 @@ $ brew install mongodb-community@4.2
 * mysql mysql.sock 오류시 해결방법 : [macOS에서 homebrew로 mysql 을 깨끗하게 재설치](https://walkingfox.tistory.com/89)
 
 ### Docker
-* 설치 - `$ brew cask install docker`
+* 설치 - $ `brew cask install docker`
 * [Mac에서 Docker 환경구성 및 기본 사용 방법](https://bblog.tistory.com/297)
-* Docker에서 지원하지 않는 CPU의 경우 - `$ brew cask install docker-toolbox` 설치해보는건 어떨까..(아직 확인 못함)
+* Docker에서 지원하지 않는 CPU의 경우 - $ `brew cask install docker-toolbox` 설치해보는건 어떨까..(아직 확인 못함)
 
 ### tomcat
-* 설치 - `$ brew install tomcat`
+* 설치 - $ `brew install tomcat`
 * [macOS Apache Tomcat 설치, 아파치 톰캣 실행 방법](https://whitepaek.tistory.com/12)
 
 ### Open JDK 8
@@ -132,46 +132,46 @@ $ brew cask install adoptopenjdk8
 
 ### ADB
 * android platform tools
-* `$ brew cask install android-platform-tools`
+* $ `brew cask install android-platform-tools`
 * 참조 : [링크](https://stackoverflow.com/questions/31374085/installing-adb-on-macos)
 
 ### JetBrain Toolbox
-* `$ brew cask install jetbrains-toolbox`
+* $ `brew cask install jetbrains-toolbox`
 
 ### Packet Sender
-* `$ brew cask install packetsender`
+* $ `brew cask install packetsender`
 
 ### Intel Power Gadget
 * 설명 : Intel CPU 온도 및 주파수 조회
-* `$ brew cask install intel-power-gadget`
+* $ `brew cask install intel-power-gadget`
 
 ### Macs Fan Control
 * 맥에서 도는 팬의 회전수 / 온도 체크
-* `$ brew cask install macs-fan-control`
+* $ `brew cask install macs-fan-control`
 
 ### App Cleaner
 * 프로그램 삭제툴
-* `$ brew cask install appcleaner`
+* $ `brew cask install appcleaner`
 
 ### Wireshark
 * 패킷 검사 툴
-* `$ brew cask install wireshark`
+* $ `brew cask install wireshark`
 
 ### 1password
-* `$ brew cask install 1password`
+* $ `brew cask install 1password`
 
 ### Team Viewer
-* `$ brew cask install teamviewer`
+* $ `brew cask install teamviewer`
 
 ### Github Desktop
-* `$ brew cask install github`
+* $ `brew cask install github`
 
 ### Slack
 * 사내 메신져
-* `$ brew cask install slack`
+* $ `brew cask install slack`
 
 ### Visual Studio Code
-* `$ brew cask install visual-studio-code`
+* $ `brew cask install visual-studio-code`
 
 ### Mounty
 * NTFS 쓰기 for macOS
