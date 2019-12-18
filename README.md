@@ -1,8 +1,10 @@
 # macOS tips
 
-### macOS backquote 설정하기 ( ₩ -> ` )
-* $ `if ! [ -f ~/Library/KeyBindings/DefaultkeyBinding.dict ]; then mkdir -p ~/Library/KeyBindings && echo '{"₩" = ("insertText:", "\`");}' > ~/Library/KeyBindings/DefaultkeyBinding.dict; fi`
-* 저장 후 맥 재시동
+### macOS backquote 설정하기 ( ₩ -> ` ) 
+```bash
+$ if ! [ -f ~/Library/KeyBindings/DefaultkeyBinding.dict ]; then mkdir -p ~/Library/KeyBindings && echo '{"₩" = ("insertText:", "\`");}' > ~/Library/KeyBindings/DefaultkeyBinding.dict; fi
+```
+* 맥 재시동
 * 참조사이트 : [링크](https://gist.github.com/redism/43bc51cab62269fa97a220a7bb5e1103?fbclid=IwAR3LVQc21h0aSxZGCCFMoEvdxe15aywjmkXRVf7ECIkcWUttuPGT0J2oE_I)
 
 ### RNDIS 활성화0
