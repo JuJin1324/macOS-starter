@@ -213,4 +213,15 @@ $ brew cask install adoptopenjdk8
 
 ### htop
 * top 명령어를 좀 더 시각적으로 나타냄
-* macOs 버전 설치 - $ `brew install htop`
+* $ `brew install htop`
+
+### Mackup
+* macOS 환경설정 백업
+* $ `brew install Mackup`
+* 설정파일 생성 - $ `vi ~/.mackup.cfg`
+```bash
+[storage]
+engine = icloud
+```
+* 백업 실행 - $ `mackup backup`
+* mackup이 백업하는 프로그램 리스트 - $ `mackup list`
