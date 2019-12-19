@@ -226,3 +226,38 @@ engine = icloud
 ```
 * 백업 실행 - $ `mackup backup`
 * mackup이 백업하는 프로그램 리스트 - $ `mackup list`
+* 참조사이트 : [맥 설치와 환경 설정을 최대한 자동화하기](https://nolboo.kim/blog/2015/05/07/mac-setup/)
+
+### m-cli
+* 맥 시스템 제어
+* $ `brew install m-cli`
+* 참조사이트 : [맥을 터미널로 제어할 수 있는 세 가지 명령어 유틸리티 m, mac, mas](https://nolboo.kim/blog/2016/09/03/control-mac-with-terminal/)
+* OS 시스템 정보 얻기 - $ `m info`
+* 네트워크 인터페이스 보기 - $ `m network ls`
+* 확인 없이 재시작 - $ `m restart -f`
+* 확인 없이 종료 - $ `m shutdown -f`
+* 스크린세이버 실행 - $ `m screensaver`
+* 휴지통 비우기 - $ `m trash clean`
+* 와이파이 비밀번호 - $ `m wifi showpassword`
+
+### mac
+* 개발 관련 명령
+* 실제 실행 파일이라기 보다는 명령어를 입력하면 다른 명령어로 변환해서 시스템에 입력시켜줌.
+* 주의) 다른 명령어들을 모두 설치해야함으로 설치가 오래걸리고 설치하지 않을 경우 해당 명령은 실행 불가
+* $ `sh -c "$(wget https://raw.githubusercontent.com/guarinogabriel/mac-cli/master/mac-cli/tools/install -O -)"`
+* 사용중인 포트 보기 - $ `mac ports`
+* 로컬 IP 주소 보기 - $ `mac ip:local`
+* 퍼블릭 IP 주소 보기 - $ `mac ip:public`
+* 인터넷 스피드 테스트 - $ `mac speedtest`
+* 볼륨 모두 추출 - $ `mac eject-all`
+* 기타 SSH 관련 - 
+```text
+SSH Utilities: 
+mac ssh:download-file X: Download file from remote server through SSH - X = Path of the remote file to download 
+mac ssh:download-folder X: Download entire folder from remote server through SSH - X = Path of the remote folder to download 
+mac ssh:download-database X: Download database from remote server through SSH - X = Name of the database to download 
+mac ssh:sync:local X: Sync local folder with remote folder using rsync through SSH (download remote folder to local folder)
+mac ssh:sync:remote X: Path of the remote folder to sync from local folder (upload local folder to remote folder) 
+mac ssh:upload X: Upload file to remote server through SSH - X = Path of the file to upload to the remote server 
+mac ssh:public-key X: Get public SSH key for local machine 
+```
