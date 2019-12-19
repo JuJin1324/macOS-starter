@@ -220,6 +220,7 @@ $ brew cask install adoptopenjdk8
 * $ `brew install Mackup`
 * 설정파일 생성 - $ `vi ~/.mackup.cfg`
 ```bash
+### icloud 에 백업 생성
 [storage]
 engine = icloud
 ```
