@@ -7,7 +7,7 @@ $ if ! [ -f ~/Library/KeyBindings/DefaultkeyBinding.dict ]; then mkdir -p ~/Libr
 * 맥 재시동
 * 참조사이트 : [링크](https://gist.github.com/redism/43bc51cab62269fa97a220a7bb5e1103?fbclid=IwAR3LVQc21h0aSxZGCCFMoEvdxe15aywjmkXRVf7ECIkcWUttuPGT0J2oE_I)
 
-### RNDIS 활성화0
+### RNDIS 활성화
 * SIP 비활성화 : 
     - 맥 재부팅 시에 cmd + R 을 통한 복구모드 진입 -> 상위 메뉴 -> 유틸리티 -> 터미널
     - `# csrutil disable` 후 재부팅
