@@ -211,8 +211,33 @@ $ brew cask install adoptopenjdk8
 ### VMWare Fusion
 * 다운로드 : [링크](https://www.vmware.com/kr/products/fusion/fusion-evaluation.html)
 
-
-
-
-
-
+### htop
+* top 명령어를 좀 더 시각적으로 나타냄
+* macOs 버전 설치 - $ `brew install htop`
+* arm-linux 버전 다운로드
+    - $ `cd ~/Downloads`
+    - $ `wget https://hisham.hm/htop/releases/2.2.0/htop-2.2.0.tar.gz`
+    - $ `tar -xvf htop-2.2.0.tar.gz`
+    - $ `cd htop-2.2.0.tar.gz`
+    - $ `sudo mkdir /usr/local/arm-linux-htop`
+    - $ `./autogen.sh`
+```bash
+    CC=arm-unknown-linux-gnueabi-gcc CXX=arm-unknown-linux-gnueabi-c++ LD=arm-unknown-linux-gnueabi-ld NM=arm-unknown-linux-gnueabi-nm OBJDUMP=arm-unknown-linux-gnueabi-objdump RANLIB=arm-unknown-linux-gnueabi-ranlib AR=arm-unknown-linux-gnueabi-ar ./configure --build=x86_64-apple-darwin`uname -r` --host=arm-linux --prefix=/usr/local/arm-linux-htop --disable-unicode
+```
+    - $ `sudo make clean`
+    - $ `sudo make`
+    - $ `sudo make install`
+    - `/usr/local/arm-linux-htop/bin` 디렉터리에 htop 실행 파일을 arm-linux 기기의 /bin 디렉터리 아래로 이동
+    - 주의 사항 : arm-linux 기기에 ncurses 동적 라이브러리 파일인 `libncurses.so.5`가 없으면 동작하지 않기 때문에 추가 설치 필요
+### ncurses 라이브러리
+* macOS 버전 설치 - $ `brew install ncurses`
+* arm-linux 버전 다운로드 및 설치
+    - $ `cd ~/Downloads`
+    - $ `wget https://ftp.gnu.org/pub/gnu/ncurses/ncurses-5.9.tar.gz`
+    - $ `tar -xvf ncurses-5.9.tar.gz`
+    - $ `cd ncurses-5.9`
+    - $ `sudo mkdir /usr/local/arm-linux-ncurses`
+```bash
+    CC=arm-unknown-linux-gnueabi-gcc CXX=arm-unknown-linux-gnueabi-c++ LD=arm-unknown-linux-gnueabi-ld NM=arm-unknown-linux-gnueabi-nm OBJDUMP=arm-unknown-linux-gnueabi-objdump RANLIB=arm-unknown-linux-gnueabi-ranlib AR=arm-unknown-linux-gnueabi-ar ./configure --build=x86_64-apple-darwin`uname -r` --host=arm-linux --prefix=/usr/local/arm-linux-ncurses
+``` 
+    - 참조 사이트 : [링크](https://github.com/chef/omnibus-software/blob/master/config/patches/ncurses/ncurses-5.9-gcc-5.patch)
