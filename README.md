@@ -1,6 +1,7 @@
 # macOS tips
 
 ## diskutil
+### 목록/추출/삽입
 * 연결된 디스크 목록 보기 - $ `diskutil list`  
 결과 예시)
 ```bash
@@ -32,6 +33,11 @@
 
 * 특정 디스크 재삽입 : $ `diskutil unmount [IDENTIFIER]`  
 예시) $ `diskutil mount disk3s2`
+
+### 디스크 포맷
+* EFI 파티션 없이 디스크 포맷하기 - $ `diskutil eraseDisk JHFS+ MYDISK MBR [디스크이름]`   
+예시) $ `diskutil eraseDisk JHFS+ MYDISK MBR disk3`
+* 참고사이트 : [Removing EFI partition from external Disk?](https://apple.stackexchange.com/questions/327283/removing-efi-partition-from-external-disk)
 
 ## 우편번호 검색 서비스
 * 참고사이트 : [링크](https://macnews.tistory.com/4716)
