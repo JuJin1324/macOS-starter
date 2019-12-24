@@ -35,7 +35,8 @@
 예시) $ `diskutil mount disk3s2`
 
 ### 디스크 포맷
-* EFI 파티션 없이 디스크 포맷하기 - $ `diskutil eraseDisk JHFS+ MYDISK MBR [디스크이름]`   
+* 포맷 기본 - $ `diskutil eraseDisk [포맷] [새로 설정할 디스크 이름] [설계] [IDENTIFIER]`
+* EFI 파티션 없이 디스크 포맷하기 - $ `diskutil eraseDisk JHFS+ [새로 설정할 디스크 이름] MBR [IDENTIFIER]`   
 예시) $ `diskutil eraseDisk JHFS+ MYDISK MBR disk3`
 * 참고사이트 : [Removing EFI partition from external Disk?](https://apple.stackexchange.com/questions/327283/removing-efi-partition-from-external-disk)
 
