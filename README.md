@@ -1,13 +1,56 @@
 # macOS tips
 
-### macOS backquote 설정하기 ( ₩ -> ` ) 
+## diskutil
+### 목록/추출/삽입
+* 연결된 디스크 목록 보기 - $ `diskutil list`  
+결과 예시)
+```bash
+/dev/disk0 (internal, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *1.0 TB     disk0
+   1:                        EFI EFI                     314.6 MB   disk0s1
+   2:                 Apple_APFS Container disk1         984.2 GB   disk0s2
+
+/dev/disk1 (synthesized):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      APFS Container Scheme -                      +984.2 GB   disk1
+                                 Physical Store disk0s2
+   1:                APFS Volume Macintosh HD - 데이터   216.6 GB   disk1s1
+   2:                APFS Volume Preboot                 90.1 MB    disk1s2
+   3:                APFS Volume Recovery                528.5 MB   disk1s3
+   4:                APFS Volume VM                      3.2 GB     disk1s4
+   5:                APFS Volume Macintosh HD            11.0 GB    disk1s5
+
+/dev/disk3 (external, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *1.0 TB     disk3
+   1:                        EFI EFI                     209.7 MB   disk3s1
+   2:                  Apple_HFS WD Elements             999.8 GB   disk3s2
+```
+
+* 특정 디스크 추출 : /dev/disk 옆에 external(외부)로 되어 있는 디스크만 추출 가능 - $ `diskutil unmount [IDENTIFIER]`   
+예시) $ `diskutil unmount disk3s2`
+
+* 특정 디스크 재삽입 : $ `diskutil unmount [IDENTIFIER]`  
+예시) $ `diskutil mount disk3s2`
+
+### 디스크 포맷
+* 포맷 기본 - $ `diskutil eraseDisk [포맷] [새로 설정할 디스크 이름] [설계] [IDENTIFIER]`
+* EFI 파티션 없이 디스크 포맷하기 - $ `diskutil eraseDisk JHFS+ [새로 설정할 디스크 이름] MBR [IDENTIFIER]`   
+예시) $ `diskutil eraseDisk JHFS+ MYDISK MBR disk3`
+* 참고사이트 : [Removing EFI partition from external Disk?](https://apple.stackexchange.com/questions/327283/removing-efi-partition-from-external-disk)
+
+## 우편번호 검색 서비스
+* 참고사이트 : [링크](https://macnews.tistory.com/4716)
+
+## macOS backquote 설정하기 ( ₩ -> ` ) 
 ```bash
 $ if ! [ -f ~/Library/KeyBindings/DefaultkeyBinding.dict ]; then mkdir -p ~/Library/KeyBindings && echo '{"₩" = ("insertText:", "\`");}' > ~/Library/KeyBindings/DefaultkeyBinding.dict; fi
 ```
 * 맥 재시동
 * 참조사이트 : [링크](https://gist.github.com/redism/43bc51cab62269fa97a220a7bb5e1103?fbclid=IwAR3LVQc21h0aSxZGCCFMoEvdxe15aywjmkXRVf7ECIkcWUttuPGT0J2oE_I)
 
-### RNDIS 활성화
+## RNDIS 활성화
 * SIP 비활성화 : 
     - 맥 재부팅 시에 cmd + R 을 통한 복구모드 진입 -> 상위 메뉴 -> 유틸리티 -> 터미널
     - `# csrutil disable` 후 재부팅
