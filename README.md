@@ -53,7 +53,7 @@ $ if ! [ -f ~/Library/KeyBindings/DefaultkeyBinding.dict ]; then mkdir -p ~/Libr
 * 좋은점 : 백스페이스 잘 들어서 빨리 지울 수 있음.
 
 ### Git
-* macOS - OS 업데이트 후 git 등 오류 발생 시 솔루션 - `$ xcode-select --install`
+* macOS - OS 업데이트 후 git 등 오류 발생 시 솔루션 - $ `xcode-select --install`
 * 참고자료 : [링크](http://redutan.github.io/2015/10/05/osx-after-update-git-error)
 
 ### VPN 사용 
