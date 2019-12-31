@@ -126,6 +126,9 @@ command + \ | 1password 찾기
 * Homebrew는 CLI 패키지 및 GUI 패키지를 설치할 수 있다.
     - CLI 패키지 관리자 : `brew`
     - GUI 패키지 관리자 : `brew cask`
+* 참조페이지 
+    - [링크](https://m.blog.naver.com/PostView.nhn?blogId=sarang2594&logNo=221246170677&proxyReferer=https%3A%2F%2Fwww.google.com%2F)
+    - brew 패키지 관리하기 : [링크](https://rkjun.wordpress.com/2013/07/14/os-x-missing-package-manager-home-brew/)
 
 ### Homebrew 설치
 * <b>터미널(Terminal)</b> 에서 작업
@@ -148,8 +151,6 @@ command + \ | 1password 찾기
     - $ `brew cask uninstall [패키지명]`
 * cask 저장소에서 패키지 찾기 : $ `brew cask audit [패키지명]`
 * 패키지 전체 최신버전으로 업데이트 : $ `brew cask upgrade`
-* 참조페이지 : [링크](https://m.blog.naver.com/PostView.nhn?blogId=sarang2594&logNo=221246170677&proxyReferer=https%3A%2F%2Fwww.google.com%2F)
-* brew 패키지 관리하기 : [링크](https://rkjun.wordpress.com/2013/07/14/os-x-missing-package-manager-home-brew/)
 
 ### OpenJDK 8
 * 패키지 저장소 추가 : $ `brew tap AdoptOpenJDK/openjdk`
