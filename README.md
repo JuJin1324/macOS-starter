@@ -143,6 +143,9 @@ command + \ | 1password 찾기
 ### brew cask(GUI 패키지 관리) 사용법
 * 패키지(응용프로그램) 찾기 : $ `brew search [찾을 패키지명]`
 * 패키지 설치 : $ `brew cask install [패키지명]`
+* 패키지 삭제(둘 중 아무거나 선택)
+    - $ `brew cask remove [패키지명]`
+    - $ `brew cask uninstall [패키지명]`
 * cask 저장소에서 패키지 찾기 : $ `brew cask audit [패키지명]`
 * 패키지 전체 최신버전으로 업데이트 : $ `brew cask upgrade`
 * 참조페이지 : [링크](https://m.blog.naver.com/PostView.nhn?blogId=sarang2594&logNo=221246170677&proxyReferer=https%3A%2F%2Fwww.google.com%2F)
