@@ -141,7 +141,7 @@ command + \ | 1password 찾기
     - $ `brew remove [패키지명]`
     - $ `brew uninstall [패키지명]`
 * 설치된 패키지 목록 보기 : $ `brew list`
-* 패키지 저장소 추가 : $ `brew tap homebrew/[패키지명]`
+* 패키지 저장소 추가 : $ `brew tap [저장소명]`
 
 ### brew cask(GUI 패키지 관리) 사용법
 * 패키지(응용프로그램) 찾기 : $ `brew search [찾을 패키지명]`
@@ -164,11 +164,11 @@ command + \ | 1password 찾기
 * 설치 : $ `brew cask install visual-studio-code`
 
 ### Docker
-* 가상화 머신 
+* 설명 : 가상화 머신 
 * 설치 : $ `brew cask install docker`
 
 ### ADB
-* android platform tools
+* 설명 : android platform tools
 * 설치 : $ `brew cask install android-platform-tools`
 * 참조 : [링크](https://stackoverflow.com/questions/31374085/installing-adb-on-macos)
 
@@ -189,7 +189,7 @@ command + \ | 1password 찾기
 * 설치 : $ `brew cask install packetsender`
 
 ### Wireshark
-* 패킷 검사 툴
+* 설명 : 패킷 검사 툴
 * 설치 : $ `brew cask install wireshark`
 
 ### tomcat
@@ -197,19 +197,19 @@ command + \ | 1password 찾기
 * [macOS Apache Tomcat 설치, 아파치 톰캣 실행 방법](https://whitepaek.tistory.com/12)
 
 ### mongoDB
-* nosql database 중 하나
+* 설명 : nosql database 중 하나
 * 패키지 저장소 추가 : $ `brew tap mongodb/brew`
-* mongoDB 설치 : $ `brew install mongodb-community@4.2`
+* 설치 : $ `brew install mongodb-community@4.2`
 * mongoDB 서비스(background) 실행 : $ `brew services start mongodb-community@4.2`
 
 ### nosqlbooster for MongoDB 
-* mongoDB GUI 관리툴 
-* nosqlbooster for MongoDB 설치 : $ `brew cask install nosqlbooster-for-mongodb`
+* 설명 : mongoDB GUI 관리툴 
+* 설치 : $ `brew cask install nosqlbooster-for-mongodb`
 * 참고 사이트 : [Install MongoDB Community Edition on macOS](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/)  
 
 ### MySQL
-* RDBMS : 관계형 데이터베이스
-* mysql 설치 : $ `brew cask install mysql`
+* 설명 : RDBMS(관계형 데이터베이스)
+* 설치 : $ `brew cask install mysql`
 * [macOS MySQL 설치 및 설정 사용법](https://whitepaek.tistory.com/16)
 * [MySQL 설치 후 터미널에서 환경변수 설정하기](https://jason719.tistory.com/45)  
 * [macOS 터미널에서 mysql 서버 켜기 / 끄기](https://macinjune.com/all-posts/web-developing/problem-solving/macos-%ED%84%B0%EB%AF%B8%EB%84%90-mysql-%EC%84%9C%EB%B2%84-%EC%BC%9C%EA%B8%B0-%EB%81%84%EA%B8%B0/)  
@@ -246,7 +246,7 @@ engine = icloud
 * 참조사이트 : [맥 설치와 환경 설정을 최대한 자동화하기](https://nolboo.kim/blog/2015/05/07/mac-setup/)
 
 ### m-cli
-* 맥 시스템 제어
+* 설명 : 맥 시스템 제어
 * $ `brew install m-cli`
 * 참조사이트 : [맥을 터미널로 제어할 수 있는 세 가지 명령어 유틸리티 m, mac, mas](https://nolboo.kim/blog/2016/09/03/control-mac-with-terminal/)
 * OS 시스템 정보 얻기 - $ `m info`
@@ -258,7 +258,7 @@ engine = icloud
 * 와이파이 비밀번호 - $ `m wifi showpassword`
 
 ### mac
-* 개발 관련 명령
+* 설명 : 개발 관련 명령
 * 실제 실행 파일이라기 보다는 명령어를 입력하면 다른 명령어로 변환해서 시스템에 입력시켜줌.
 * 주의) 다른 명령어들을 모두 설치해야함으로 설치가 오래걸리고 설치하지 않을 경우 해당 명령은 실행 불가
 * $ `sh -c "$(wget https://raw.githubusercontent.com/guarinogabriel/mac-cli/master/mac-cli/tools/install -O -)"`
