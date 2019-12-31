@@ -1,4 +1,5 @@
 # macOS tips
+macOS 개발에 필요한 도구 설치 및 문제 해결 팁 정리
 
 ## diskutil
 ### 목록/추출/삽입
@@ -96,7 +97,7 @@ $ if ! [ -f ~/Library/KeyBindings/DefaultkeyBinding.dict ]; then mkdir -p ~/Libr
 * 좋은점 : 백스페이스 잘 들어서 빨리 지울 수 있음.
 
 ### Git
-* macOS - OS 업데이트 후 git 등 오류 발생 시 솔루션 - $ `xcode-select --install`
+* macOS - OS 업데이트 후 git 등 오류 발생 시 솔루션 : $ `xcode-select --install`
 * 참고자료 : [링크](http://redutan.github.io/2015/10/05/osx-after-update-git-error)
 
 ### VPN 사용 
@@ -119,54 +120,92 @@ shift + control + 전원 버튼 | 디스플레이를 잠자기 상태로 전환
 (터미널에서) command + shift + K | 원격연결 저장 및 연결
 command + \ | 1password 찾기 
 
-### eGPU
-* 설명 : [링크](https://github.com/mayankk2308/purge-wrangler)
+## Homebrew
+* 설명 : macOS 전용 패키지 관리자
+* 공식 페이지 : [링크](https://brew.sh/index_ko)
+* Homebrew는 CLI 패키지 및 GUI 패키지를 설치할 수 있다.
+    - CLI 패키지 관리자 : `brew`
+    - GUI 패키지 관리자 : `brew cask`
 
-## macOS 사용 프로그램 정리
-### Homebrew
-* 설명 : macOS 용 패키지 관리자
-* 다운로드 : [링크](https://brew.sh/index_ko)
-* 자주 쓰는 옵션
-```bash
-### 설치된 패키지 리스트 확인
-$ brew list
+### Homebrew 설치
+* <b>터미널(Terminal)</b> 에서 작업
+* $ 설치 명령어 : $ `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 
-### brew에서 설치할 수 있는 패키지 검색
-$ brew search 찾고싶은패키지명
+### brew(CLI 패키지 관리) 사용법
+* 패키지(응용프로그램) 찾기 : $ `brew search [찾을 패키지명]`
+* 패키지 설치 : $ `brew install [패키지 명]`
+* 패키지 삭제(둘 중 아무거나 선택)
+    - $ `brew remove [패키지명]`
+    - $ `brew uninstall [패키지명]`
+* 설치된 패키지 목록 보기 : $ `brew list`
+* 패키지 저장소 추가 : $ `brew tap homebrew/[패키지명]`
 
-### 패키지 삭제
-$ brew remove 패키지명 OR brew uninstall 패키지명
-
-### brew cask : GUI 애플리케이션 설치
-$ brew cask install 애플리케이션명
-
-### 애플리케이션이 cask 저장소에 있는지 확인
-$ brew cask audit 애플리케이션명
-
-### 애플리케이션 전체 최신버전으로 업데이트
-$ brew cask upgrade
-```
+### brew cask(GUI 패키지 관리) 사용법
+* 패키지(응용프로그램) 찾기 : $ `brew search [찾을 패키지명]`
+* 패키지 설치 : $ `brew cask install [패키지명]`
+* cask 저장소에서 패키지 찾기 : $ `brew cask audit [패키지명]`
+* 패키지 전체 최신버전으로 업데이트 : $ `brew cask upgrade`
 * 참조페이지 : [링크](https://m.blog.naver.com/PostView.nhn?blogId=sarang2594&logNo=221246170677&proxyReferer=https%3A%2F%2Fwww.google.com%2F)
 * brew 패키지 관리하기 : [링크](https://rkjun.wordpress.com/2013/07/14/os-x-missing-package-manager-home-brew/)
 
-### Oh My Zsh
-* 설치 - `$ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
-* Oh My Zsh : [github](https://github.com/robbyrussell/oh-my-zsh)
+### OpenJDK 8
+* 패키지 저장소 추가 : $ `brew tap AdoptOpenJDK/openjdk`
+* opendjk 8 설치 : $ `brew cask install adoptopenjdk8`
+* 참조 : [링크](https://github.com/AdoptOpenJDK/homebrew-openjdk)
+
+### JetBrain Toolbox
+* 설치 : $ `brew cask install jetbrains-toolbox`
+
+### Visual Studio Code
+* 설치 : $ `brew cask install visual-studio-code`
+
+### Docker
+* 가상화 머신 
+* 설치 : $ `brew cask install docker`
+
+### ADB
+* android platform tools
+* 설치 : $ `brew cask install android-platform-tools`
+* 참조 : [링크](https://stackoverflow.com/questions/31374085/installing-adb-on-macos)
+
+### netcat
+* 설명 : 통신을 리스닝 서버를 netcat 명령어를 통해 간단하게 실행 가능
+* 설치 : $ `brew install netcat`
+* 사용법 
+    - 1. 외부 서버에 특정 포트로 접속이 가능한지 확인 : $ `nc -z [외부 서버 주소] [포트]`
+    - 2. Listening 서버를 로컬에 띄우기 : $ `nc -l [포트]`
+
+### ngrok
+* 설명 : 외부망에서 tcp 접속할 수 있도록 지정 포트를 ngrok에서 제공해주는 도메인 및 포트에 바인딩해준다.
+* 주의 : 회원가입 필요(무료)
+* 설치 : $ `brew install ngrok`
+* 사용법 : $ `ngrok tcp [로컬 서버 프로세스의 포트]`
+
+### Packet Sender
+* 설치 : $ `brew cask install packetsender`
+
+### Wireshark
+* 패킷 검사 툴
+* 설치 : $ `brew cask install wireshark`
+
+### tomcat
+* 설치 : $ `brew install tomcat`
+* [macOS Apache Tomcat 설치, 아파치 톰캣 실행 방법](https://whitepaek.tistory.com/12)
 
 ### mongoDB
-* mongoDB 설치 
-```bash
-$ brew tap mongodb/brew
-$ brew install mongodb-community@4.2
-```
-* mongoDB 실행 - $ `brew services start mongodb-community@4.2`
-* nosql booster for MongoDB 설치 - $ `brew cask install nosqlbooster-for-mongodb`
+* nosql database 중 하나
+* 패키지 저장소 추가 : $ `brew tap mongodb/brew`
+* mongoDB 설치 : $ `brew install mongodb-community@4.2`
+* mongoDB 서비스(background) 실행 : $ `brew services start mongodb-community@4.2`
 
-* 참고 사이트
- - [Install MongoDB Community Edition on macOS](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/)  
+### nosqlbooster for MongoDB 
+* mongoDB GUI 관리툴 
+* nosqlbooster for MongoDB 설치 : $ `brew cask install nosqlbooster-for-mongodb`
+* 참고 사이트 : [Install MongoDB Community Edition on macOS](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/)  
 
 ### MySQL
-* $ `brew cask install mysql`
+* RDBMS : 관계형 데이터베이스
+* mysql 설치 : $ `brew cask install mysql`
 * [macOS MySQL 설치 및 설정 사용법](https://whitepaek.tistory.com/16)
 * [MySQL 설치 후 터미널에서 환경변수 설정하기](https://jason719.tistory.com/45)  
 * [macOS 터미널에서 mysql 서버 켜기 / 끄기](https://macinjune.com/all-posts/web-developing/problem-solving/macos-%ED%84%B0%EB%AF%B8%EB%84%90-mysql-%EC%84%9C%EB%B2%84-%EC%BC%9C%EA%B8%B0-%EB%81%84%EA%B8%B0/)  
@@ -177,90 +216,21 @@ $ brew install mongodb-community@4.2
 * [[DB/MariaDB/Mysql] Mysql 언어설정으로 인한 문제, 그리고 해결](https://postitforhooney.tistory.com/entry/DBMariaDBMysql-Mysql-%EC%96%B8%EC%96%B4%EC%84%A4%EC%A0%95%EC%9C%BC%EB%A1%9C-%EC%9D%B8%ED%95%9C-%EB%AC%B8%EC%A0%9C-%EA%B7%B8%EB%A6%AC%EA%B3%A0-%ED%95%B4%EA%B2%B0)  
 * mysql mysql.sock 오류시 해결방법 : [macOS에서 homebrew로 mysql 을 깨끗하게 재설치](https://walkingfox.tistory.com/89)
 
-### Docker
-* 설치 - $ `brew cask install docker`
-
-### tomcat
-* 설치 - $ `brew install tomcat`
-* [macOS Apache Tomcat 설치, 아파치 톰캣 실행 방법](https://whitepaek.tistory.com/12)
-
-### Open JDK 8
-```bash
-$ brew tap AdoptOpenJDK/openjdk
-$ brew cask install adoptopenjdk8
-```
-* 참조 : [링크](https://github.com/AdoptOpenJDK/homebrew-openjdk)
-
-### ADB
-* android platform tools
-* $ `brew cask install android-platform-tools`
-* 참조 : [링크](https://stackoverflow.com/questions/31374085/installing-adb-on-macos)
-
-### JetBrain Toolbox
-* $ `brew cask install jetbrains-toolbox`
-
-### Packet Sender
-* $ `brew cask install packetsender`
-
-### Intel Power Gadget
-* 설명 : Intel CPU 온도 및 주파수 조회
-* $ `brew cask install intel-power-gadget`
-
-### Macs Fan Control
-* 맥에서 도는 팬의 회전수 / 온도 체크
-* $ `brew cask install macs-fan-control`
-
-### App Cleaner
-* 프로그램 삭제툴
-* $ `brew cask install appcleaner`
-
-### Wireshark
-* 패킷 검사 툴
-* $ `brew cask install wireshark`
-
-### 1password
-* $ `brew cask install 1password`
-
-### Team Viewer
-* $ `brew cask install teamviewer`
+### Git
+* 설명 : 버전 관리
+* 설치 : $ `brew install git`
 
 ### Github Desktop
-* $ `brew cask install github`
-
-### Slack
-* 사내 메신져
-* $ `brew cask install slack`
-
-### Visual Studio Code
-* $ `brew cask install visual-studio-code`
-
-### Mounty
-* NTFS 쓰기 for macOS
-* $ `brew cask install mounty`
-
-### logitech options
-* 설명 : logitech 키보드 및 마우스 설정
-* 다운로드 : [링크](https://www.logitech.com/ko-kr/product/options)
-
-### LG 모니터 소프트웨어
-* 다운로드 : [링크](https://www.lgservice.co.kr/search/driverSoftTotalSearchPage.do?type=3&searchKeyWord=34WK95U)
-
-### Folx
-* 다운로드 : [링크](https://mac.eltima.com/ko/download-manager.html)
-
-### beats update
-* 다운로드 : [링크](https://www.beatsbydre.com/kr/support/how-to/firmware-updates-beats-updater)
-
-### VMWare Fusion
-* 다운로드 : [링크](https://www.vmware.com/kr/products/fusion/fusion-evaluation.html)
+* 설명 : 앱으로 Github 관리 
+* 설치 : $ `brew cask install github`
 
 ### htop
-* top 명령어를 좀 더 시각적으로 나타냄
-* $ `brew install htop`
+* 설명 : top 명령어를 좀 더 시각적으로 나타냄
+* 설치 : $ `brew install htop`
 
 ### Mackup
-* macOS 환경설정 백업
-* $ `brew install Mackup`
+* 설명 : macOS 환경설정 백업
+* 설치 : $ `brew install Mackup`
 * 설정파일 생성 - $ `vi ~/.mackup.cfg`
 ```bash
 ### icloud 에 백업 생성
@@ -304,3 +274,63 @@ mac ssh:sync:remote X: Path of the remote folder to sync from local folder (uplo
 mac ssh:upload X: Upload file to remote server through SSH - X = Path of the file to upload to the remote server 
 mac ssh:public-key X: Get public SSH key for local machine 
 ```
+
+### Chrome
+* 설명 : Google의 인터넷 브라우저
+* 설치 : $ `brew cask install google-chrome`
+
+### TimeMachine Editor
+* 설명 : 맥 자동백업 프로그램인 타임머신 설정 프로그램
+* 설치 : $ `brew cask install timemachineeditor`
+
+### Intel Power Gadget
+* 설명 : Intel CPU 온도 및 주파수 조회
+* 설치 : $ `brew cask install intel-power-gadget`
+
+### Macs Fan Control
+* 설명 : 맥에서 도는 팬의 회전수 / 온도 체크
+* 설치 : $ `brew cask install macs-fan-control`
+
+### App Cleaner
+* 설명 : 프로그램 삭제툴
+* 설치 : $ `brew cask install appcleaner`
+
+### 1password
+* 설치 : $ `brew cask install 1password`
+
+### Team Viewer
+* 설치 : $ `brew cask install teamviewer`
+
+### Slack
+* 설명 : 사내 메신져
+* 설치 : $ `brew cask install slack`
+
+### Mounty
+* 설명 : NTFS 쓰기 for macOS
+* 설치 : $ `brew cask install mounty`
+
+## 링크를 통한 다운로드가 필요한 패키지 항목
+### Oh My Zsh
+* 설치 : `$ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
+* Oh My Zsh : [github](https://github.com/robbyrussell/oh-my-zsh)
+
+### eGPU
+* 설명 : <b>Thunderbolt 3</b>를 지원하지 않는 맥에서 외장 그래픽(External GPU)를 연결할 수 있도록 해주는 스크립트
+* 설치 : $ `curl -qLs $(curl -qLs https://bit.ly/2WtIESm | grep '"browser_download_url":' | cut -d'"' -f4) > purge-wrangler.sh; bash purge-wrangler.sh; rm purge-wrangler.sh`
+* 공식 사이트 : [링크](https://github.com/mayankk2308/purge-wrangler)
+
+### logitech options
+* 설명 : logitech 키보드 및 마우스 설정
+* 다운로드 : [링크](https://www.logitech.com/ko-kr/product/options)
+
+### LG 모니터 소프트웨어
+* 다운로드 : [링크](https://www.lgservice.co.kr/search/driverSoftTotalSearchPage.do?type=3&searchKeyWord=34WK95U)
+
+### Folx
+* 다운로드 : [링크](https://mac.eltima.com/ko/download-manager.html)
+
+### beats update
+* 다운로드 : [링크](https://www.beatsbydre.com/kr/support/how-to/firmware-updates-beats-updater)
+
+### VMWare Fusion
+* 다운로드 : [링크](https://www.vmware.com/kr/products/fusion/fusion-evaluation.html)
