@@ -157,6 +157,9 @@ command + \ | 1password 찾기
 * opendjk 8 설치 : `brew cask install adoptopenjdk8`
 * 참조 : [링크](https://github.com/AdoptOpenJDK/homebrew-openjdk)
 
+### CMake
+* 설치 : `brew install cmake`
+
 ### JetBrain Toolbox
 * 설치 : `brew cask install jetbrains-toolbox`
 
