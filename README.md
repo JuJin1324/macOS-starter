@@ -133,6 +133,7 @@ command + \ | 1password 찾기
 ### Homebrew 설치
 * <b>터미널(Terminal)</b> 에서 작업
 * 설치 명령어 : `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+* macOS Catalina 이후 버전 사용으로 인한 zsh 사용시에 brew를 통해 설치된 패키지 명령 사용을 위한 path 추가 : `echo 'export PATH="/usr/local/sbin:$PATH"' >> ~/.zshrc`
 
 ### brew(CLI 패키지 관리) 사용법
 * 패키지(응용프로그램) 찾기 : `brew search [찾을 패키지명]`
