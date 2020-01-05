@@ -299,6 +299,10 @@ mac ssh:public-key X: Get public SSH key for local machine
 * 설명 : 맥에서 도는 팬의 회전수 / 온도 체크
 * 설치 : `brew cask install macs-fan-control`
 
+### Go2Shell
+* 설명 : 파인더 상위 메뉴 버튼을 통해서 현재 파인더의 디렉터리 위치를 터미널로 열기
+* 설치 : `brew cask install go2shell`
+
 ### App Cleaner
 * 설명 : 프로그램 삭제툴
 * 설치 : `brew cask install appcleaner`
