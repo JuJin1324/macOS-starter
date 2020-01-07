@@ -321,11 +321,13 @@ mac ssh:public-key X: Get public SSH key for local machine
 * 설명 : NTFS 쓰기 for macOS
 * 설치 : `brew cask install mounty`
 
-### zsh 관련
+### zsh 플러그인
 * zsh-syntax-highlighting : zsh 문법 표시
     - 설치 : `brew install zsh-syntax-highlighting`
+    - .zshrc 수정 : `vi ~/.zshrc` -> `plugins=(git zsh-syntax-highlighting)`
 * zsh-git-prompt : git 상태 zsh에서 확인
     - 설치 : `brew install zsh-git-prompt`
+    - .zshrc 수정 : `vi ~/.zshrc` -> `plugins=(git zsh-syntax-highlighting zsh-git-prompt)`
 
 ### 에러 1
 * 로그 : `/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:54:in 'require': cannot load such file -- active_support/core_ext/object/blank (LoadError)`
