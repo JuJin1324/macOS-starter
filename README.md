@@ -212,10 +212,11 @@ command + \ | 1password 찾기
 * [macOS Apache Tomcat 설치, 아파치 톰캣 실행 방법](https://whitepaek.tistory.com/12)
 
 ### mongoDB
-* 설명 : nosql database 중 하나
-* 패키지 저장소 추가 : `brew tap mongodb/brew`
-* 설치 : `brew install mongodb-community@4.2`
-* mongoDB 서비스(background) 실행 : `brew services start mongodb-community@4.2`
+> * 설명 : nosql database 중 하나
+> * 패키지 저장소 추가 : `brew tap mongodb/brew`
+> * Client 설치: `brew install mongocli`
+> * Server 설치 : `brew install mongodb-community@4.2`
+> * mongoDB 서비스(background) 실행 : `brew services start mongodb-community@4.2`
 
 ### nosqlbooster for MongoDB 
 * 설명 : mongoDB GUI 관리툴 
@@ -295,7 +296,7 @@ mac ssh:public-key X: Get public SSH key for local machine
 ```
 
 ### Chrome
-* 설명 : Google의 인터넷 브라우저
+* 설명 : Google의 인터넷 브라우저 <b>(업데이트 문제 때문에 브라우저로 직접 다운로드 받는걸 추천)</b>
 * 설치 : `brew cask install google-chrome`
 
 ### TimeMachine Editor
