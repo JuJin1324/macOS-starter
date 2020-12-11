@@ -214,7 +214,6 @@ command + \ | 1password 찾기
 ### mongoDB
 > * 설명 : nosql database 중 하나
 > * 패키지 저장소 추가 : `brew tap mongodb/brew`
-> * Client 설치: `brew install mongocli`
 > * Server 설치 : `brew install mongodb-community@4.2`
 > * mongoDB 서비스(background) 실행 : `brew services start mongodb-community@4.2`
 
