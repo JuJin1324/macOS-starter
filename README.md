@@ -1,6 +1,34 @@
 # macOS-Starter
 macOS에서 웹 개발에 필요한 환경 잡기 및 지식 정리
 
+## SFTP 사용자 권한
+### 특정 사용자가 특정 디렉터리 이상 접근 못하도록 권한 설정
+> 특정 사용자 ID가 `viewUser` 로 가정  
+> 해당 사용자의 루트 디렉터리를 `/Users/viewUser/Public`으로 가정  
+> ssh_config 파일 수정 `sudo vi /etc/ssh/ssh_config`  
+> 기존 `Subsystem      sftp    /usr/libexec/sftp-server` 를 주석처리  
+> 신규 추가: `Subsystem sftp internal-sftp`  
+> `Match User` 문장도 추가  
+> ```
+> #Subsystem      sftp    /usr/libexec/sftp-server
+> Subsystem sftp internal-sftp
+>
+> # Example of overriding settings on a per-user basis
+> #Match User anoncvs
+> #       X11Forwarding no
+> #       AllowTcpForwarding no
+> #       PermitTTY no
+> #       ForceCommand cvs server
+>
+> Match User viewUser
+>        ChrootDirectory /Users/viewUser/Public
+>        ForceCommand internal-sftp
+>        X11Forwarding no
+>        AllowTCPForwarding no
+>
+> ```
+> 참조사이트: [SFTP(Chroot 완벽설정) 사용자 상위폴더 접근 못하게 하는 두가지 방법](https://studyforus.tistory.com/243)
+
 ## Safari Extension 
 ### Mac AppStore for CLI
 Safari 확장 프로그램이 mac appstore로 편입되었다. mac appstore를 cli로 사용하기 위해서 mas를 설치한다.  
