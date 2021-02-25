@@ -109,6 +109,9 @@ $ if ! [ -f ~/Library/KeyBindings/DefaultkeyBinding.dict ]; then mkdir -p ~/Libr
 * CPU 확인 - `sysctl -n machdep.cpu.brand_string`
 * GPU 확인 - `system_profiler SPDisplaysDataType`
 
+### 키보드 프로그램간 자동 한영 전환 옵션
+> 시스템 환경 설정 -> 키보드 -> 입력 소스 -> `문서의 입력 소스로 자동으로 전환` 에 체크박스
+
 ### Spotlight 키 변경
 * 시스템 환경설정 -> 키보드 -> 단축키 -> Spotlight -> cmd + shift + space
 
