@@ -1,6 +1,77 @@
 # macOS-Starter
 macOS에서 웹 개발에 필요한 환경 잡기 및 지식 정리
 
+## Terminal 
+### iTerm2 
+> 설치: `brew install iterm2`  
+> 
+> Color Schemes 설치: `git clone https://github.com/mbadolato/iTerm2-Color-Schemes.git`
+> Color Schemes 설정: iterm2 앱을 연 후 Preference (단축키: `cmd + ,`) -> Profiles -> Colors -> 우측 하단의 DropBox `Color Presets` 클릭 -> import... 
+> -> 위에서 git clone 한 경로 이동 -> schemes 디렉터리로 이동 -> 디렉터리 안에 있는 파일 모두 선택 후 Open 버튼 클릭 
+> -> 다시 우측 하단의 DropBox `Color Presets` 클릭 -> `Adventure` 선택
+>
+> 참조사이트: [Oh My ZSH+ iTerm2로 터미널을 더 강력하게](https://medium.com/harrythegreat/oh-my-zsh-iterm2%EB%A1%9C-%ED%84%B0%EB%AF%B8%EB%84%90%EC%9D%84-%EB%8D%94-%EA%B0%95%EB%A0%A5%ED%95%98%EA%B2%8C-a105f2c01bec)
+
+### zsh 플러그인
+> zsh-syntax-highlighting : zsh 문법 표시
+> * 설치: `brew install zsh-syntax-highlighting`  
+> .zshrc 수정 : `vi ~/.zshrc` -> `plugins=(git zsh-syntax-highlighting)`  
+> 
+> zsh-git-prompt : git 상태 zsh에서 확인  
+> * 설치: `brew install zsh-git-prompt`  
+> .zshrc 수정 : `vi ~/.zshrc` -> `plugins=(git zsh-syntax-highlighting zsh-git-prompt)`  
+> 
+> zsh-autosuggestions: shell 자동 완성
+> * 설치: `brew install zsh-autosuggestions`  
+> .zshrc 수정 : `vi ~/.zshrc` -> `plugins=(git zsh-syntax-highlighting zsh-git-prompt zsh-autosuggestions)`  
+
+### Oh-My-Zsh
+> 설치 : `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`  
+> 테마 설정: `vi ~/.zshrc` -> 기존 ZSH_THEME="robbyrussell" 주석 후 -> `ZSH_THEME="agnoster"` 추가  
+> 
+> agnoster 테마 한글 깨짐 보정: 
+> ```shell 
+> git clone https://github.com/powerline/fonts.git
+> cd fonts
+> ./install.sh
+> ```
+> iterm2 앱을 연 후 Preference (단축키: `cmd + ,`) -> Profiles -> text 
+> -> 좌측하단 Font 아래 DropBox 에서 `Meslo LG M DZ for Powerline` 선택, Regular, 14, 101, 100    
+> Unicode normalization form 옆에 DropBox `NFC` 설정
+> 
+> 참조사이트: [Oh-My-Zsh github](https://github.com/robbyrussell/oh-my-zsh)
+  
+### New line 적용
+> `agnoster` 테마 적용시 경로를 표시하는 줄 때문에 명령어가 화면 밖으로 나갈 수 있다. 명령어가 화면 바깥으로 나가지 않고 
+> 다음 줄에 표시되도록 New line 을 적용한다.  
+> 테마 파일 수정: `vi ~/.oh-my-zsh/themes/agnoster.zsh-theme`
+> ```text
+> ...
+> prompt_newline() {
+>   if [[ -n $CURRENT_BG ]]; then
+>     echo -n "%{%k%F{$CURRENT_BG}%}$SEGMENT_SEPARATOR %{%k%F{blue}%}$SEGMENT_SEPARATOR"
+>   else
+>     echo -n "%{%k%}"
+>   fi
+> 
+>   echo -n "%{%f%}"
+>   CURRENT_BG=''
+> }
+>
+> build_prompt() {
+>   RETVAL=$?
+>   prompt_status
+>   prompt_virtualenv
+>   prompt_context
+>   prompt_dir
+>   prompt_git
+>   prompt_bzr
+>   prompt_hg
+>   prompt_newline //이부분을 추가 꼭 순서 지켜서
+>   prompt_end
+> }
+> ```
+
 ## SFTP 사용자 권한
 ### 특정 사용자가 특정 디렉터리 이상 접근 못하도록 권한 설정
 > 특정 사용자 ID가 `viewUser` 로 가정  
@@ -364,23 +435,11 @@ mac ssh:public-key X: Get public SSH key for local machine
 * 설명 : NTFS 쓰기 for macOS
 * 설치 : `brew cask install mounty`
 
-### zsh 플러그인
-* zsh-syntax-highlighting : zsh 문법 표시
-    - 설치 : `brew install zsh-syntax-highlighting`
-    - .zshrc 수정 : `vi ~/.zshrc` -> `plugins=(git zsh-syntax-highlighting)`
-* zsh-git-prompt : git 상태 zsh에서 확인
-    - 설치 : `brew install zsh-git-prompt`
-    - .zshrc 수정 : `vi ~/.zshrc` -> `plugins=(git zsh-syntax-highlighting zsh-git-prompt)`
-
 ### 에러 1
 * 로그 : `/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:54:in 'require': cannot load such file -- active_support/core_ext/object/blank (LoadError)`
 * 대처 : `brew update-reset`
 
 ## 링크를 통한 다운로드가 필요한 패키지 항목
-### Oh My Zsh
-* 설치 : `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
-* Oh My Zsh : [github](https://github.com/robbyrussell/oh-my-zsh)
-
 ### eGPU
 * 설명 : <b>Thunderbolt 3</b>를 지원하지 않는 맥에서 외장 그래픽(External GPU)를 연결할 수 있도록 해주는 스크립트
 * 설치 : `curl -qLs $(curl -qLs https://bit.ly/2WtIESm | grep '"browser_download_url":' | cut -d'"' -f4) > purge-wrangler.sh; bash purge-wrangler.sh; rm purge-wrangler.sh`
