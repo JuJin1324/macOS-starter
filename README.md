@@ -21,11 +21,7 @@ macOS에서 웹 개발에 필요한 환경 잡기 및 지식 정리
 > echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
 > ```  
 > .zshrc 수정 : `vi ~/.zshrc` -> `plugins=(git zsh-syntax-highlighting)`  
-> 
-> zsh-git-prompt : git 상태 zsh에서 확인  
-> * 설치: `brew install zsh-git-prompt`  
-> .zshrc 수정 : `vi ~/.zshrc` -> `plugins=(git zsh-syntax-highlighting zsh-git-prompt)`  
-> 
+>  
 > zsh-autosuggestions: shell 자동 완성
 > 설치 
 > ```shell
