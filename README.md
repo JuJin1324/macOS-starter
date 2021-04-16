@@ -14,7 +14,12 @@ macOS에서 웹 개발에 필요한 환경 잡기 및 지식 정리
 
 ### zsh 플러그인
 > zsh-syntax-highlighting : zsh 문법 표시
-> * 설치: `brew install zsh-syntax-highlighting`  
+> 설치 
+> ```shell
+> cd ~/.oh-my-zsh/plugins 
+> git clone https://github.com/zsh-users/zsh-syntax-highlighting.git 
+> echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
+> ```  
 > .zshrc 수정 : `vi ~/.zshrc` -> `plugins=(git zsh-syntax-highlighting)`  
 > 
 > zsh-git-prompt : git 상태 zsh에서 확인  
@@ -22,7 +27,12 @@ macOS에서 웹 개발에 필요한 환경 잡기 및 지식 정리
 > .zshrc 수정 : `vi ~/.zshrc` -> `plugins=(git zsh-syntax-highlighting zsh-git-prompt)`  
 > 
 > zsh-autosuggestions: shell 자동 완성
-> * 설치: `brew install zsh-autosuggestions`  
+> 설치 
+> ```shell
+> cd ~/.oh-my-zsh/plugins 
+> git clone https://github.com/zsh-users/zsh-autosuggestions.git 
+> echo "source ${(q-)PWD}/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
+> ```  
 > .zshrc 수정 : `vi ~/.zshrc` -> `plugins=(git zsh-syntax-highlighting zsh-git-prompt zsh-autosuggestions)`  
 
 ### Oh-My-Zsh
