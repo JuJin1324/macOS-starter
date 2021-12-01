@@ -266,10 +266,10 @@ command + \ | 1password 찾기
 * cask 저장소에서 패키지 찾기 : `brew cask audit [패키지명]`
 * 패키지 전체 최신버전으로 업데이트 : `brew cask upgrade`
 
-### OpenJDK 8
-* 패키지 저장소 추가 : `brew tap AdoptOpenJDK/openjdk`
-* opendjk 8 설치 : `brew cask install adoptopenjdk8`
-* 참조 : [링크](https://github.com/AdoptOpenJDK/homebrew-openjdk)
+### JDK
+* corretto: amazon 에서 만든 openJDK
+* corretto 8 설치 : `brew install corretto8`  
+* corretto 11 설치 : `brew install corretto11`
 
 ### CMake
 * 설치 : `brew install cmake`
