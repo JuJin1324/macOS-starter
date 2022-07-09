@@ -11,6 +11,10 @@ macOS에서 웹 개발에 필요한 환경 잡기 및 지식 정리
 > -> 다시 우측 하단의 DropBox `Color Presets` 클릭 -> `Adventure` 선택
 >
 > 참조사이트: [Oh My ZSH+ iTerm2로 터미널을 더 강력하게](https://medium.com/harrythegreat/oh-my-zsh-iterm2%EB%A1%9C-%ED%84%B0%EB%AF%B8%EB%84%90%EC%9D%84-%EB%8D%94-%EA%B0%95%EB%A0%A5%ED%95%98%EA%B2%8C-a105f2c01bec)
+>
+> 키보드 단축키 설정
+> 시스템 환경설정 -> 키보드 -> 단축키 탭 -> 서비스 -> New iTerm2 Window Here 에 F5 설정 후 
+> 아무 폴더 연 후에 F5 눌러서 해당 경로로 iterm 열리는지 확인
 
 ### zsh 플러그인
 > zsh-syntax-highlighting : zsh 문법 표시
