@@ -107,6 +107,10 @@ macOS에서 웹 개발에 필요한 환경 잡기 및 지식 정리
 > ```
 > 참조사이트: [SFTP(Chroot 완벽설정) 사용자 상위폴더 접근 못하게 하는 두가지 방법](https://studyforus.tistory.com/243)
 
+## Chrome Extension
+### JSON Viewer
+> [JSON View Chrome Extension 추가](https://chrome.google.com/webstore/detail/json-viewer/aimiinbnnkboelefkjlenlgimcabobli/related?hl=ko)
+
 ## Safari Extension 
 ### Mac AppStore for CLI
 Safari 확장 프로그램이 mac appstore로 편입되었다. mac appstore를 cli로 사용하기 위해서 mas를 설치한다.  
