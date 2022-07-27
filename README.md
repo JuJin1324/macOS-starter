@@ -1,6 +1,30 @@
 # macOS-Starter
 macOS에서 웹 개발에 필요한 환경 잡기 및 지식 정리
 
+## SSH 접속
+### 클라이언트에서 SSH Key 생성
+> ```bash
+> $ ssh-keygen -t rsa
+> Enter file in which to save the key (...): <enter>
+> Enter passphrase (empty for no passphrase): <enter>
+> Enter same passphrase again: <enter>
+> 
+> $ chmod 700 ~/.ssh
+> $ chmod 600 ~/.ssh/id_rsa
+> $ chmod 644 ~/.ssh/id_rsa.pub
+> $ chmod 644 ~/.ssh/authorized_keys
+> $ chmod 644 ~/.ssh/known_hosts
+> ```
+
+### 서버에 SSH Key 등록 
+> 클라이언트의 `~/.ssh/id_rsa.pub` 의 내용을 복사해서 서버의 `~/.ssh/authorized_keys` 에 붙여넣는다.
+
+### 서버 접속
+> `ssh -i ~/.ssh/id_rsa.pub jujin@192.168.0.26` 
+
+### 참조 사이트
+> [SSH Key - 비밀번호 없이 로그인](https://opentutorials.org/module/432/3742)
+
 ## Terminal 
 ### iTerm2 
 > 설치: `brew install iterm2`  
