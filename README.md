@@ -1,6 +1,39 @@
 # macOS-Starter
 macOS에서 웹 개발에 필요한 환경 잡기 및 지식 정리
 
+## 서비스 데몬
+### 서비스 등록
+> 내가 사용하는 Dev 서버는 macOS 환경으로 Dev 서버에는 다음을 정의한다.  
+> 1.LaunchAgents 디렉터리로 이동: `cd /Library/LaunchAgents`   
+> 2.서비스 등록을 위한 plist 파일 생성: `sudo vi external-api.mvc.plist`
+> ```xml
+> <?xml version="1.0" encoding="UTF-8"?>
+> <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+> <plist version="1.0">
+>   <dict>
+>     <key>KeepAlive</key>
+>     <true />
+>     <key>RunAtLoad</key>
+>     <true/>
+>     <key>Label</key>
+>     <string>external-api.mvc</string>
+>     <key>ProgramArguments</key>
+>     <array>
+>       <string>/usr/bin/nohup</string>
+>       <string>java</string>
+>       <string>-jar</string>
+>       <string>-Dspring.profiles.active=dev</string>
+>       <string>/Users/jujin/external-api/mvc/external-api-mvc-0.0.1-SNAPSHOT.jar</string>
+>     </array>
+>   </dict>
+> </plist>
+> ```
+> 3.서비스 등록: `launchctl load /Library/LaunchAgents/external-api.mvc.plist`
+
+### 서비스 재시작
+> `launchctl stop external-api.mvc`
+> launchctl 로드 `launchctl load external-api.mvc.plist` 해놓으면 stop 해도 자동으로 재실행된다.
+
 ## SSH 접속
 ### 클라이언트에서 SSH Key 생성
 > ```bash
