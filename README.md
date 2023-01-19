@@ -253,7 +253,14 @@
 > `brew cask uninstall [패키지명]`  
 > 
 > cask 저장소에서 패키지 찾기 : `brew audit --cask [패키지명]`  
-> 패키지 전체 최신버전으로 업데이트 : `brew upgrade`  
+> 패키지 전체 최신버전으로 업데이트 : `brew upgrade`
+
+### brew services
+> brew로 설치한 애플리케이션 실행 및 서비스 등록 관리  
+> 애플리케이션 리스트 보기: `brew services list`    
+> 실행: `brew services start [app]`  
+> 종료: `brew services stop [app]`  
+> 상태 보기: `brew services info [app]`   
 
 ### JDK
 > jdk 8 설치 : `brew install openjdk@8`    
