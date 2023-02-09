@@ -1,6 +1,24 @@
 # macOS-Starter
 > macOS에서 웹 개발에 필요한 환경 잡기 및 지식 정리
 
+## VPN
+### macOS Ventura VPN 접속 프로파일 생성
+> 1.Mac App Store 에서 `Apple Configurator` 설치  
+> 터미널에 mas(Mac App Store) 가 설치 안된 경우 먼저 설치: `brew install mas`  
+> Apple Configurator 설치: `mas install 1037126344`  
+> 
+> 2.프로파일 생성
+> Apple Configurator 오픈 -> 새로운 프로파일(Cmd + N) -> 일반 탭에서 이름만 설정 
+> -> VPN 탭으로 이동 -> 구성 버튼 클릭 -> 필수 정보 입력 -> 저장(Cmd + S) 
+> -> 만들어진 프로파일 더블 클릭 -> 시스템 설정 앱 열기 -> 개인정보 보호 및 보안 -> 맨 아래 기타 섹션에서 프로파일 
+> -> 만들었던 프로파일 더블클릭 -> 설치... 버튼 클릭 
+>
+> 3.VPN 연결
+> 시스템 설정 앱의 VPN 탭으로 이동 -> 신규 생성된 VPN 의 토글 클릭해서 연결 시도 -> 연결 완료  
+>
+> 참조사이트
+> [L2TP VPN broken on MacOS 13/Ventura](https://developer.apple.com/forums/thread/707996)
+
 ## Hardware
 ### LG 모니터 4K 연결
 > LG 모니터에 썬더볼트 연결 시 4K 해상도가 안나오는 경우 해결 방법  
