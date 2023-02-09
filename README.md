@@ -1,6 +1,23 @@
 # macOS-Starter
 > macOS에서 웹 개발에 필요한 환경 잡기 및 지식 정리
 
+## magnet
+> macOS 에서 앱 단축키로 앱의 윈도우 크기 및 위치 조정 앱
+
+### 설치
+> `mas install 441258766`
+
+### 1/2 분할 단축어
+> 왼쪽: Ctrl + Shift + ←  
+> 오른쪽: Ctrl + Shift + →  
+
+### 1/3 분할 단축어
+> 좌측 1번째: Ctrl + Shift + 1  
+> 좌측 2번째: Ctrl + Shift + 2  
+> 좌측 3번째: Ctrl + Shift + 3  
+
+---
+
 ## VPN
 ### macOS Ventura VPN 접속 프로파일 생성
 > 1.Mac App Store 에서 `Apple Configurator` 설치  
