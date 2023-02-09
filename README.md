@@ -281,16 +281,10 @@
 > 
 > 설치된 패키지 목록 보기 : `brew list`  
 > 패키지 저장소 추가 : `brew tap [저장소명]`  
-
-### brew cask(GUI 패키지 관리) 사용법
-> 패키지(응용프로그램) 찾기 : `brew search [찾을 패키지명]`  
-> 패키지 설치 : `brew install --cask [패키지명]`  
-> 패키지 삭제(둘 중 아무거나 선택)  
-> `brew cask remove [패키지명]`  
-> `brew cask uninstall [패키지명]`  
-> 
-> cask 저장소에서 패키지 찾기 : `brew audit --cask [패키지명]`  
 > 패키지 전체 최신버전으로 업데이트 : `brew upgrade`
+
+### ~~ brew cask(GUI 패키지 관리) 사용법 ~~
+> 더이상 cask 명령을 사용하지 않음.  
 
 ### brew services
 > brew로 설치한 애플리케이션 실행 및 서비스 등록 관리  
