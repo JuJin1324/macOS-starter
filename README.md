@@ -19,6 +19,8 @@
 > 참조사이트
 > [L2TP VPN broken on MacOS 13/Ventura](https://developer.apple.com/forums/thread/707996)
 
+---
+
 ## Hardware
 ### LG 모니터 4K 연결
 > LG 모니터에 썬더볼트 연결 시 4K 해상도가 안나오는 경우 해결 방법  
@@ -281,8 +283,26 @@
 > 상태 보기: `brew services info [app]`   
 
 ### JDK
-> jdk 8 설치 : `brew install openjdk@8`    
-> jdk 11 설치 : `brew install openjdk@11`  
+> Homebrew 를 통해서 amazon corretto 의 이전 버전을 설치하기 위해서는 먼저 `homebrew/cask-versions` 을 탭해야한다.   
+> `brew tap homebrew/cask-versions`
+> 
+> corretto 8 설치 : `brew install corretto8`    
+> corretto 11 설치 : `brew install corretto11`  
+> 
+> terminal java version 설정
+> ```
+> vi ~/.zshrc
+> 
+> ...
+> # Java Paths
+> export JAVA_HOME_11=$(/usr/libexec/java_home -v11)
+> export JAVA_HOME_8=$(/usr/libexec/java_home -v1.8)
+> 
+> # Java Home Setting
+> export JAVA_HOME=$JAVA_HOME_11
+> :wq
+> source ~/.zshrc
+> ```
 
 ### JetBrain Toolbox
 > 설치 : `brew install --cask jetbrains-toolbox`  
