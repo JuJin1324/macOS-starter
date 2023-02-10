@@ -1,6 +1,16 @@
 # macOS-Starter
 > macOS에서 웹 개발에 필요한 환경 잡기 및 지식 정리
 
+## iterm
+### Finder 에 열린 디렉터리를 iterm 으로 열기 단축키 설정
+> 시스템 설정 -> 키보드 -> 키보드 단축키... 버튼 클릭 -> 서비스 탭 -> 파일 및 폴더 -> 
+> New iTerm2 Tab Here 에 F5 설정  
+> New iTerm2 Window Here 에 F6 설정
+>
+> 사용법: Finder 에서 디렉터리를 먼저 클릭한 후에 F5 키를 누르면 iTerm2 에 현재 디렉터리가 클릭한 디렉터리 경로로 설정된 터미널이 켜진다.  
+
+---
+
 ## magnet
 > macOS 에서 앱 단축키로 앱의 윈도우 크기 및 위치 조정 앱
 
