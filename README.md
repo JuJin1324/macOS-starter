@@ -13,11 +13,11 @@
 > [iterm color scheme 사이트](https://iterm2colorschemes.com/)에 접속하여 원하는 color scheme 을 다운로드 받을 수 있다.  
 > 예시로 iterm color scheme 중 Adventure 를 다운로드 받아서 적용한다.  
 > `cd ~/Desktop; wget https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/Adventure.itermcolors`  
-> iTerm2 앱을 켜서 Command + i -> Colors 탭 -> Color Presets... -> 목록의 맨 아래 import... 항목 클릭 
+> iTerm2 앱을 켜서 Preferences -> Profiles 탭 -> Colors 탭 -> Color Presets... -> 목록의 맨 아래 import... 항목 클릭 
 > -> Desktop 에서 Adventure.itermcolors 파일 선택 -> 다시 Color Presets... -> 목록에서 Adventure 선택   
 
 ### 한글 파일 깨짐 수정
-> Command + i -> Text 탭 -> Unicode normalization form: 에서 None 선택을 NFC 선택으로 변경  
+> Preferences -> Profiles 탭 -> Text 탭 -> Unicode normalization form: 에서 None 선택을 NFC 선택으로 변경  
 
 ---
 
