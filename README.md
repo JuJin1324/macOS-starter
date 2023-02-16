@@ -16,6 +16,9 @@
 > iTerm2 앱을 켜서 Command + i -> Colors 탭 -> Color Presets... -> 목록의 맨 아래 import... 항목 클릭 
 > -> Desktop 에서 Adventure.itermcolors 파일 선택 -> 다시 Color Presets... -> 목록에서 Adventure 선택   
 
+### 한글 파일 깨짐 수정
+> Command + i -> Text 탭 -> Unicode normalization form: 에서 None 선택을 NFC 선택으로 변경  
+
 ---
 
 ## magnet
