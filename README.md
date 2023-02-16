@@ -1,13 +1,20 @@
 # macOS-Starter
 > macOS에서 웹 개발에 필요한 환경 잡기 및 지식 정리
 
-## iterm
+## iTerm
 ### Finder 에 열린 디렉터리를 iterm 으로 열기 단축키 설정
 > 시스템 설정 -> 키보드 -> 키보드 단축키... 버튼 클릭 -> 서비스 탭 -> 파일 및 폴더 -> 
 > New iTerm2 Tab Here 에 F5 설정  
 > New iTerm2 Window Here 에 F6 설정
 >
 > 사용법: Finder 에서 디렉터리를 먼저 클릭한 후에 F5 키를 누르면 iTerm2 에 현재 디렉터리가 클릭한 디렉터리 경로로 설정된 터미널이 켜진다.  
+
+### Color scheme 적용
+> [iterm color scheme 사이트](https://iterm2colorschemes.com/)에 접속하여 원하는 color scheme 을 다운로드 받을 수 있다.  
+> 예시로 iterm color scheme 중 Adventure 를 다운로드 받아서 적용한다.  
+> `cd ~/Desktop; wget https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/Adventure.itermcolors`  
+> iTerm2 앱을 켜서 Command + i -> Colors 탭 -> Color Presets... -> 목록의 맨 아래 import... 항목 클릭 
+> -> Desktop 에서 Adventure.itermcolors 파일 선택 -> 다시 Color Presets... -> 목록에서 Adventure 선택   
 
 ---
 
