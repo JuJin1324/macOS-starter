@@ -120,9 +120,9 @@ alias rdnow="sudo shutdown -r now"
 alias edz="vi ~/.zshrc"
 alias srz="source ~/.zshrc"
 alias eall="mac eject-all"
-alias tmbup="tmutil startbackup"
-alias battery="ioreg -l -w0 | grep Capacity"
+alias tmsbp="tmutil startbackup"
 alias iall="idea;webstorm;datagrip"
+alias dul="diskutil list"
 
 # chrome favorites
 #alias infl="open -a \"Google Chrome\" https://www.inflearn.com"
@@ -142,21 +142,21 @@ alias safari="open -a \"Safari\" https://www.youtube.com"
 #alias iptime="open -a \"Safari\" http://192.168.0.1"
 #alias afree="open -a \"Safari\" https://www.afreecatv.com"
 
-# application
+# Applications
 alias figma="open -a \"Figma\""
 alias kakao="open -a \"KaKaoTalk\""
 
-# finder
+# Finder
 alias cdtf="cd /Volumes/T5_2TB"
 alias cdwn="cd ~/Downloads"
 alias cdev="cd ~/Documents/dev"
 alias cdsk="cd ~/Desktop"
 
-# docker
+# Docker
 alias dp="docker ps"
 alias dl="docker logs"
 
-# brew
+# Homebrew
 alias bs="brew services"
 alias bl="brew list"
 

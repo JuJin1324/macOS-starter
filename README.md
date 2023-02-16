@@ -1,6 +1,35 @@
 # macOS-Starter
 > macOS에서 웹 개발에 필요한 환경 잡기 및 지식 정리
 
+## zshrc 단축어
+### 시스템 관련
+> `sdnow`: shutdown now  
+> `rdnow`: restart now  
+> `edz`: edit zshrc  
+> `srz`: source ~/.zshrc  
+> tmsbp: time machine util start backup  
+> jall: open jetbrain all product  
+> dul: diskutil list  
+
+### Docker
+> `dp`: docker ps  
+> `dl`: docker logs  
+
+### Homebrew
+> `bs`: brew services  
+> `bl`: brew list  
+
+---
+
+## vi 
+### 설정
+> 설정파일: `~/.vimrc`
+> 주의: .vimrc 는 source 할 필요없이 바로 적용된다.  
+> 
+> 줄 번호 출력 설정: `:set nu`  
+
+---
+
 ## iTerm
 ### Finder 에 열린 디렉터리를 iterm 으로 열기 단축키 설정
 > 시스템 설정 -> 키보드 -> 키보드 단축키... 버튼 클릭 -> 서비스 탭 -> 파일 및 폴더 -> 
