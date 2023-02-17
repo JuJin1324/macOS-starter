@@ -114,6 +114,8 @@ source $ZSH/oh-my-zsh.sh
 source /Users/jujin/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /Users/jujin/.oh-my-zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
+source ~/powerlevel10k/powerlevel10k.zsh-theme
+
 # system alias
 alias sdnow="sudo shutdown -h now"
 alias rdnow="sudo shutdown -r now"
