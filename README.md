@@ -1,6 +1,44 @@
 # macOS-Starter
 > macOS에서 웹 개발에 필요한 환경 잡기 및 지식 정리
 
+## mas
+### 설명
+> mac app store  
+
+### 설치
+> `brew install mas`   
+
+### mas 를 통한 앱 설치 목록
+> mas 를 통한 설치: `mas install <App 번호>`  
+> mas 를 통해 설치한 앱 목록: `mas list`  
+> 앱 검색: `mas search <검색어>`  
+> 
+> ```
+> 409183694   Keynote               (12.2.1)
+> 409203825   Numbers               (12.2.1)
+> 409201541   Pages                 (12.2.1)
+> 462058435   Microsoft Excel       (16.69.1)
+> 462062816   Microsoft PowerPoint  (16.69.1)
+> 462054704   Microsoft Word        (16.69.1)
+> 1437130425  Jolt of Caffeine      (1.1)
+> 425264550   Disk Speed Test       (3.4.2)
+> 1462255869  날씨날씨                  (1.0)
+> 1451273814  nPlayer               (1.4.0)
+> 441258766   Magnet                (2.11.0)
+> 1333542190  1Password 7           (7.9.9)
+> 869223134   카카오톡                  (3.1.4)
+> 416746898   한컴오피스 한글 2014 VP 뷰어   (10.30.18)
+> 418423076   YemuZip               (2.4.8)
+> 497799835   Xcode                 (14.2)
+> 1475628500  유니콘 HTTPS             (1.8.73)
+> 1402042596  AdBlock               (1.28.2)
+> 1023251042  알라딘 ebook             (1.0.14)
+> 461788075   무비스트                  (2.7.2)
+> 1037126344  Apple Configurator    (2.16)
+> ```
+
+---
+
 ## zshrc 단축어
 ### 시스템 관련
 > `sdnow`: shutdown now  
