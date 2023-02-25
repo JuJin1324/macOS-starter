@@ -325,8 +325,14 @@
 
 ### 시스템 정보 확인
 > Hyper-V 지원 확인 - `sysctl kern.hv_support`  
-> CPU 확인 - `sysctl -n machdep.cpu.brand_string`  
-> GPU 확인 - `system_profiler SPDisplaysDataType`  
+> CPU 확인: `sysctl -n machdep.cpu.brand_string`
+> 하드웨어 및 소프트웨어 확인: `system_profiler SPHardwareDataType SPSoftwareDataType`
+> Display 확인: `system_profiler SPDisplaysDataType`    
+> USB 확인: `system_profiler SPUSBDataType`  
+> 
+> 옵션 값 확인: `system_profiler -listDataTypes`
+> 
+> 참조사이트: [How to Find Comprehensive Mac System Info via Terminal](https://osxdaily.com/2022/02/02/find-mac-system-info-terminal-system-profiler/)
 
 ### 키보드 프로그램간 자동 한영 전환 옵션
 > 시스템 환경 설정 -> 키보드 -> 입력 소스 -> `문서의 입력 소스로 자동으로 전환` 에 체크박스  
