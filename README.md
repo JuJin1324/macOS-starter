@@ -1,6 +1,21 @@
 # macOS-Starter
 > macOS에서 웹 개발에 필요한 환경 잡기 및 지식 정리
 
+## Github cli
+### install gh
+> macOS 용 Github cli 인 gh 설치: `brew install gh`  
+> 
+> Github 로그인 커맨드: `gh auth login`  
+> 
+> 터미널에서 리포지토리의 README.md 를 마크다운 적용된 화면 보기   
+> 조건: 터미널에서 현재 경로의 디렉터리가 Github 리포지토리여야함.  
+> 커맨드: `gh repo view`  
+> 
+> 현재 리포지토리를 브라우저로 보기  
+> 커맨드: `gh browse`  
+
+---
+
 ## mas
 ### 설명
 > mac app store  
