@@ -286,7 +286,7 @@
 ### 목록/추출/삽입
 > 연결된 디스크 목록 보기 - `diskutil list`    
 > 결과 예시 : 
-> ```bash
+> ```shell
 > /dev/disk0 (internal, physical):
 >    #:                       TYPE NAME                    SIZE       IDENTIFIER
 >    0:      GUID_partition_scheme                        *1.0 TB     disk0
@@ -326,12 +326,12 @@
 
 ### 시스템 정보 확인
 > Hyper-V 지원 확인 - `sysctl kern.hv_support`  
-> CPU 확인: `sysctl -n machdep.cpu.brand_string`
-> 하드웨어 및 소프트웨어 확인: `system_profiler SPHardwareDataType SPSoftwareDataType`
-> Display 확인: `system_profiler SPDisplaysDataType`    
+> CPU 확인: `sysctl -n machdep.cpu.brand_string`  
+> 하드웨어 및 소프트웨어 확인: `system_profiler SPHardwareDataType SPSoftwareDataType`  
+> Display 확인: `system_profiler SPDisplaysDataType`      
 > USB 확인: `system_profiler SPUSBDataType`  
 > 
-> 옵션 값 확인: `system_profiler -listDataTypes`
+> 옵션 값 확인: `system_profiler -listDataTypes`  
 > 
 > 참조사이트: [How to Find Comprehensive Mac System Info via Terminal](https://osxdaily.com/2022/02/02/find-mac-system-info-terminal-system-profiler/)
 
@@ -392,9 +392,6 @@
 > 패키지 저장소 추가 : `brew tap [저장소명]`  
 > 패키지 전체 최신버전으로 업데이트 : `brew upgrade`
 
-### ~~ brew cask(GUI 패키지 관리) 사용법 ~~
-> 더이상 cask 명령을 사용하지 않음.  
-
 ### brew services
 > brew로 설치한 애플리케이션 실행 및 서비스 등록 관리  
 > 애플리케이션 리스트 보기: `brew services list`    
@@ -434,20 +431,6 @@
 > 설명 : 가상화 머신  
 > 설치 : `brew install --cask docker`  
 
-### netcat
-> 설명 : 통신을 리스닝 서버를 netcat 명령어를 통해 간단하게 실행 가능  
-> 설치 : `brew install netcat`  
-> 
-> 사용법   
-> 1.외부 서버에 특정 포트로 접속이 가능한지 확인 : `nc -z [외부 서버 주소] [포트]`  
-> 2.Listening 서버를 로컬에 띄우기 : `nc -l [포트]`  
-
-### ngrok
-> 설명 : 외부망에서 tcp 접속할 수 있도록 지정 포트를 ngrok에서 제공해주는 도메인 및 포트에 바인딩해준다.    
-> 주의 : 회원가입 필요(무료)    
-> 설치 : `brew install ngrok`    
-> 사용법 : `ngrok tcp [로컬 서버 프로세스의 포트]`    
-
 ### Packet Sender
 > 설치 : `brew install --cask packetsender`  
 
@@ -465,14 +448,6 @@
 > 설명 : mongoDB GUI 관리툴   
 > 설치 : `brew install --cask nosqlbooster-for-mongodb`  
 > 참고 사이트 : [Install MongoDB Community Edition on macOS](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/)    
-
-### Github Desktop
-> 설명 : 앱으로 Github 관리 
-> 설치 : `brew install --cask github`
-
-### htop
-> 설명 : top 명령어를 좀 더 시각적으로 나타냄  
-> 설치 : `brew install htop`  
 
 ### m-cli
 > 설명 : 맥 시스템 제어  
