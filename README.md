@@ -326,7 +326,8 @@
 
 ### 시스템 정보 확인
 > Hyper-V 지원 확인 - `sysctl kern.hv_support`  
-> CPU 확인: `sysctl -n machdep.cpu.brand_string`  
+> CPU 확인: `sysctl -n machdep.cpu.brand_string`
+> CPU 확인2: `brew install cpufetch` 로 설치 후 `cpufetch`  
 > 하드웨어 및 소프트웨어 확인: `system_profiler SPHardwareDataType SPSoftwareDataType`  
 > Display 확인: `system_profiler SPDisplaysDataType`      
 > USB 확인: `system_profiler SPUSBDataType`  
