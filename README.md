@@ -7,11 +7,11 @@
 > 
 > Github 로그인 커맨드: `gh auth login`  
 > 
-> 터미널에서 리포지토리의 README.md 를 마크다운 적용된 화면 보기   
+> **터미널에서 리포지토리의 README.md 를 마크다운 적용된 화면 보기**     
 > 조건: 터미널에서 현재 경로의 디렉터리가 Github 리포지토리여야함.  
 > 커맨드: `gh repo view`  
 > 
-> 현재 리포지토리를 브라우저로 보기  
+> **현재 리포지토리를 브라우저로 보기**  
 > 커맨드: `gh browse`  
 
 ---
@@ -52,6 +52,9 @@
 > 1037126344  Apple Configurator    (2.16)
 > 492835684   Bandizip X            (1.2.4)
 > ```
+
+### mac 를 통한 앱 업데이트
+> 명령어: `mas upgrade`  
 
 ---
 
@@ -123,20 +126,20 @@
 
 ## VPN
 ### macOS Ventura VPN 접속 프로파일 생성
-> 1.Mac App Store 에서 `Apple Configurator` 설치  
+> **1.Mac App Store 에서 `Apple Configurator` 설치**  
 > 터미널에 mas(Mac App Store) 가 설치 안된 경우 먼저 설치: `brew install mas`  
 > Apple Configurator 설치: `mas install 1037126344`  
 > 
-> 2.프로파일 생성
+> **2.프로파일 생성**
 > Apple Configurator 오픈 -> 새로운 프로파일(Cmd + N) -> 일반 탭에서 이름만 설정 
 > -> VPN 탭으로 이동 -> 구성 버튼 클릭 -> 필수 정보 입력 -> 저장(Cmd + S) 
 > -> 만들어진 프로파일 더블 클릭 -> 시스템 설정 앱 열기 -> 개인정보 보호 및 보안 -> 맨 아래 기타 섹션에서 프로파일 
 > -> 만들었던 프로파일 더블클릭 -> 설치... 버튼 클릭 
 >
-> 3.VPN 연결
+> **3.VPN 연결**
 > 시스템 설정 앱의 VPN 탭으로 이동 -> 신규 생성된 VPN 의 토글 클릭해서 연결 시도 -> 연결 완료  
 >
-> 참조사이트
+> **참조사이트**    
 > [L2TP VPN broken on MacOS 13/Ventura](https://developer.apple.com/forums/thread/707996)
 
 ---
@@ -147,6 +150,7 @@
 > 1.모니터 전원 버튼 혹은 다른 버튼을 사용해서 모니터 자체 설정으로 들어간다.  
 > 2.일반 설정 메뉴로 들어가서 DisplayPort 버전이 `1.4` 로 되어 있으면 `1.2`로 변경한다.  
 > 3.해상도가 변했는지 체크하고 변하지 않았다면 썬더볼트를 뺏다가 다시 낀 후 해상도가 변경되었는지 확인한다.  
+> 해상도 변경 확인 명령어: `system_profiler SPDisplaysDataType`  
 
 ---
 
@@ -180,8 +184,10 @@
 > 3.서비스 등록: `launchctl load /Library/LaunchAgents/external-api.mvc.plist`
 
 ### 서비스 재시작
-> `launchctl stop external-api.mvc`
-> launchctl 로드 `launchctl load external-api.mvc.plist` 해놓으면 stop 해도 자동으로 재실행된다.
+> **서비스 stop**  
+> `launchctl stop external-api.mvc`  
+> **서비스 등록(linux 의 systemctl enable)**  
+> `launchctl load external-api.mvc.plist` 해놓으면 stop 해도 자동으로 재실행된다.
 
 ---
 
@@ -204,7 +210,7 @@
 > 클라이언트의 `~/.ssh/id_rsa.pub` 의 내용을 복사해서 서버의 `~/.ssh/authorized_keys` 에 붙여넣는다.
 
 ### 서버 접속
-> `ssh -i ~/.ssh/id_rsa.pub jujin@192.168.0.26` 
+> `ssh -i ~/.ssh/id_rsa jujin@192.168.0.26` 
 
 ### 참조 사이트
 > [SSH Key - 비밀번호 없이 로그인](https://opentutorials.org/module/432/3742)
@@ -283,7 +289,7 @@
 ---
 
 ## diskutil
-### 목록/추출/삽입
+### 목록
 > 연결된 디스크 목록 보기 - `diskutil list`    
 > 결과 예시 : 
 > ```shell
@@ -309,12 +315,19 @@
 >    1:                        EFI EFI                     209.7 MB   disk3s1
 >    2:                  Apple_HFS WD Elements             999.8 GB   disk3s2
 > ```
+
+### 디스크 추출
+> /dev/disk 옆에 external(외부)로 되어 있는 디스크만 추출 가능
+> 
+> **디스크 전체 추출**  
+> 파티션된 디스크들을 전부 추출한다.  
+> 커맨드: `diskutil unmountDisk [IDENTIFIER]`         
+> 예시 : `diskutil unmountDisk /dev/disk4`   
 >
-> 특정 디스크 추출 : /dev/disk 옆에 external(외부)로 되어 있는 디스크만 추출 가능 - `diskutil unmount [IDENTIFIER]`     
-> 예시 : `diskutil unmount disk3s2`  
->
-> 특정 디스크 재삽입 : `diskutil unmount [IDENTIFIER]`    
-> 예시 : `diskutil mount disk3s2`  
+> **파티션된 디스크 추출**   
+> 파티션된 디스크 하나씩만 추출한다.  
+> 커맨드: `diskutil unmount [IDENTIFIER]`   
+> 예시: `diskutil unmount /dev/disk4s2`  
 
 ### 디스크 포맷
 > 포맷 기본 - `diskutil eraseDisk [포맷] [새로 설정할 디스크 이름] [설계] [IDENTIFIER]`  
@@ -324,6 +337,7 @@
 
 ---
 
+## 시스템
 ### 시스템 정보 확인
 > Hyper-V 지원 확인 - `sysctl kern.hv_support`  
 > CPU 확인: `sysctl -n machdep.cpu.brand_string`
@@ -346,6 +360,8 @@
 > 시스템 환경설정 -> 키보드 -> 키 반복 빠르게(MAX) / 반복 지연시간 짧게 MAX에서 한칸 아래  
 > 좋은점 : 백스페이스 잘 들어서 빨리 지울 수 있음.  
 
+---
+
 ## 문제 해결
 ### Git
 > macOS - OS 업데이트 후 git 등 오류 발생 시 솔루션 : `xcode-select --install`
@@ -353,14 +369,16 @@
 
 ## macOS에서 유용한 단축키 정리
 ### Finder
-> | 설명                           | 단축키                          |                     
-> |------------------------------|-----------------------------|
-> |  command + shift + A         | 응용프로그램 폴더 열기                 |                
->  | command + shift + D         | 데스크탑 폴더 열기                   |                  
->  | command + shift + O         | 도큐먼트 폴더 열기                   |                  
->  | command + option + 전원 버튼    | Mac을 잠자기 상태로 전환              |             
->  | shift + control + 전원 버튼     | 디스플레이를 잠자기 상태로 전환            |            
->  | command + \                 | 1password 찾기                 |                
+> | 설명                           | 단축키               |                     
+> |-------------------|-----------------------------|
+> |  command + shift + A         | 응용프로그램 폴더 열기      |                
+> | command + shift + D         | 데스크탑 폴더 열기        |                  
+> | command + shift + O         | 도큐먼트 폴더 열기        |                  
+> | command + option + 전원 버튼    | Mac을 잠자기 상태로 전환   |             
+> | shift + control + 전원 버튼     | 디스플레이를 잠자기 상태로 전환 |            
+> | command + \                 | 1password 찾기      |                
+> | f13                         | 데스크탑 보기           |
+> | ctrl + 방향키 | space 이동          |
 
 ---
 
@@ -376,7 +394,7 @@
 > brew 패키지 관리하기 : [링크](https://rkjun.wordpress.com/2013/07/14/os-x-missing-package-manager-home-brew/)  
 
 ### Homebrew 설치
-> <b>터미널(Terminal)</b> 에서 작업  
+> **터미널(Terminal)** 에서 작업  
 > 설치 명령어 : `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`  
 > macOS Catalina 이후 버전 사용으로 인한 zsh 사용시에 brew를 통해 설치된 패키지 명령 사용을 위한 path 추가 : `echo 'export PATH="/usr/local/sbin:$PATH"' >> ~/.zshrc`  
 > 
@@ -390,8 +408,10 @@
 > `brew uninstall [패키지명]`
 > 
 > 설치된 패키지 목록 보기 : `brew list`  
+> 패키지 저장소 보기: `brew tap`  
 > 패키지 저장소 추가 : `brew tap [저장소명]`  
-> 패키지 전체 최신버전으로 업데이트 : `brew upgrade`
+> brew 저장소 업데이트: `brew update`   
+> 패키지 전체 최신버전으로 업데이트 : `brew upgrade`  
 
 ### brew services
 > brew로 설치한 애플리케이션 실행 및 서비스 등록 관리  
@@ -399,6 +419,15 @@
 > 실행: `brew services start [app]`  
 > 종료: `brew services stop [app]`  
 > 상태 보기: `brew services info [app]`   
+
+### brew info
+> brew 로 설치한 애플리케이션 정보 확인
+> ```shell
+> brew info <애플레케이션 이름>
+> 
+> # 예시
+> brew info iterm2
+> ```
 
 ### JDK
 > Homebrew 를 통해서 amazon corretto 의 이전 버전을 설치하기 위해서는 먼저 `homebrew/cask-versions` 을 탭해야한다.   
@@ -513,17 +542,5 @@
 > 대처 : `brew update-reset`
 
 ## 링크를 통한 다운로드가 필요한 패키지 항목
-### eGPU
-> 설명 : <b>Thunderbolt 3</b>를 지원하지 않는 맥에서 외장 그래픽(External GPU)를 연결할 수 있도록 해주는 스크립트  
-> 설치 : `curl -qLs $(curl -qLs https://bit.ly/2WtIESm | grep '"browser_download_url":' | cut -d'"' -f4) > purge-wrangler.sh; bash purge-wrangler.sh; rm purge-wrangler.sh`  
-> 공식 사이트 : [링크](https://github.com/mayankk2308/purge-wrangler)  
-
-### logitech options
-> 설명 : logitech 키보드 및 마우스 설정  
-> 다운로드 : [링크](https://www.logitech.com/ko-kr/product/options)  
-
 ### LG 모니터 소프트웨어
 > 다운로드 : [링크](https://www.lgservice.co.kr/search/driverSoftTotalSearchPage.do?type=3&searchKeyWord=34WK95U)  
-
-### Folx
-> 다운로드 : [링크](https://mac.eltima.com/ko/download-manager.html)  
