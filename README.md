@@ -327,7 +327,7 @@
 ## 시스템
 ### 시스템 정보 확인
 > Hyper-V 지원 확인 - `sysctl kern.hv_support`  
-> CPU 확인: `sysctl -n machdep.cpu.brand_string`
+> CPU 확인: `sysctl -n machdep.cpu.brand_string`  
 > CPU 확인2: `brew install cpufetch` 로 설치 후 `cpufetch`  
 > 하드웨어 및 소프트웨어 확인: `system_profiler SPHardwareDataType SPSoftwareDataType`  
 > Display 확인: `system_profiler SPDisplaysDataType`      
@@ -354,18 +354,19 @@
 > macOS - OS 업데이트 후 git 등 오류 발생 시 솔루션 : `xcode-select --install`
 > 참고자료 : [링크](http://redutan.github.io/2015/10/05/osx-after-update-git-error)
 
-## macOS에서 유용한 단축키 정리
+## macOS 에서 유용한 단축키 정리
 ### Finder
-> | 설명                           | 단축키               |                     
-> |-------------------|-----------------------------|
-> |  command + shift + A         | 응용프로그램 폴더 열기      |                
-> | command + shift + D         | 데스크탑 폴더 열기        |                  
-> | command + shift + O         | 도큐먼트 폴더 열기        |                  
-> | command + option + 전원 버튼    | Mac을 잠자기 상태로 전환   |             
-> | shift + control + 전원 버튼     | 디스플레이를 잠자기 상태로 전환 |            
-> | command + \                 | 1password 찾기      |                
-> | f13                         | 데스크탑 보기           |
-> | ctrl + 방향키 | space 이동          |
+> | 설명                       | 단축키               |                     
+> |--------------------------|-------------------|
+> | command + shift + A      | 응용프로그램 폴더 열기      |                
+> | command + shift + D      | 데스크탑 폴더 열기        |                  
+> | command + shift + O      | 도큐먼트 폴더 열기        |                  
+> | command + option + 전원 버튼 | Mac을 잠자기 상태로 전환   |             
+> | shift + control + 전원 버튼  | 디스플레이를 잠자기 상태로 전환 |            
+> | command + \              | 1password 찾기      |                
+> | f13                      | 데스크탑 보기           |
+> | [커스텀] ctrl + shift + [   | 왼쪽 space 이동       |
+> | [커스텀] ctrl + shift + ]   | 오른쪽 space 이동      |
 
 ---
 
