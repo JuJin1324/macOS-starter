@@ -64,9 +64,9 @@
 > `rdnow`: restart now  
 > `edz`: edit zshrc  
 > `srz`: source ~/.zshrc  
-> tmsbp: time machine util start backup  
-> jall: open jetbrain all product  
-> dul: diskutil list  
+> `tmsbp`: time machine util start backup  
+> `jall`: open jetbrain all product  
+> `dul`: diskutil list  
 
 ### Docker
 > `dp`: docker ps  
@@ -272,19 +272,6 @@
 ## Chrome Extension
 ### JSON Viewer
 > [JSON View Chrome Extension 추가](https://chrome.google.com/webstore/detail/json-viewer/aimiinbnnkboelefkjlenlgimcabobli/related?hl=ko)
-
----
-
-## Safari Extension 
-### Mac AppStore for CLI
-> Safari 확장 프로그램이 mac appstore로 편입되었다. mac appstore를 cli로 사용하기 위해서 mas를 설치한다.    
-> mas 설치: `brew install mas`    
-> mac appstore 로그인: `mas signin`    
-> mac appstore 로그아웃: `mas signout`    
-> mac appstore 설치 프로그램 목록 보기: `mas list`    
-> 프로그램 찾기: `mas search 찾을 프로그램명`    
-> 프로그램 설치: `mas install 프로그램명`    
-> 프로그램 제거: `mas uninstall 프로그램명`    
 
 ---
 
