@@ -351,7 +351,7 @@
 
 ## 문제 해결
 ### Git
-> macOS - OS 업데이트 후 git 등 오류 발생 시 솔루션 : `xcode-select --install`
+> macOS - OS 업데이트 후 git 등 오류 발생 시 솔루션 : `xcode-select --install`  
 > 참고자료 : [링크](http://redutan.github.io/2015/10/05/osx-after-update-git-error)
 
 ## macOS 에서 유용한 단축키 정리
@@ -526,7 +526,7 @@
 > 설치 : `brew install --cask mounty`  
 
 ### 에러 1
-> 로그 : `/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:54:in 'require': cannot load such file -- active_support/core_ext/object/blank (LoadError)`
+> 로그 : `/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:54:in 'require': cannot load such file -- active_support/core_ext/object/blank (LoadError)`  
 > 대처 : `brew update-reset`
 
 ## 링크를 통한 다운로드가 필요한 패키지 항목
