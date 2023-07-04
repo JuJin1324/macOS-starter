@@ -116,6 +116,7 @@
 ### 1/2 분할 단축어
 > 왼쪽: Ctrl + Shift + ←  
 > 오른쪽: Ctrl + Shift + →  
+> 가운데: Ctrl + `  
 
 ### 1/3 분할 단축어
 > 좌측 1번째: Ctrl + Shift + 1  
