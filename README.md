@@ -1,6 +1,18 @@
 # macOS-Starter
 > macOS에서 웹 개발에 필요한 환경 잡기 및 지식 정리
 
+## 터미널에서 블루투스 장치 연결하기
+### 장치 연결 프로그램 설치
+> `brew install blueutil`
+
+### 블루투스 리스트 보기
+> `system_profiler SPBluetoothDataType`
+
+### 블루투스 장치 연결하기
+> `blueutil --connect [장치 주소]`
+
+---
+
 ## Github cli
 ### install gh
 > macOS 용 Github cli 인 gh 설치: `brew install gh`  
