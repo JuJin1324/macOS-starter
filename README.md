@@ -1,6 +1,30 @@
 # macOS-Starter
 > macOS에서 웹 개발에 필요한 환경 잡기 및 지식 정리
 
+## 맥에서 단축키로 iTerm2 열기
+### 자동화 앱 사용
+> 1.Automator 앱 열기
+> 2.문서 유형 선택에서 `빠른 동작(Quick Action)` 선택
+> 3.현재 수신하는 작업흐름에 `입력 없음` 선택(나머지는 그대로 놔둠)
+> 4.왼쪽 검색창에 `AppleScript 실행` 검색 후 더블클릭
+> 5.다음 내용 복붙하기
+> ```shell
+> on run {input, parameters}
+>      tell application "iTerm"
+>          create window with default profile
+>      end tell
+>      return input
+> end run
+> ```
+> 6.`cmd + s` 눌러서 저장. 이름은 `iTermLauncher` 로 저장.
+> 7.시스템 설정 앱 오픈 > 키보드 탭 이동 > 키보드 단축키... 버튼 클릭 > 서비스 탭 클릭 > 일반(General) 클릭하면 위에서 저장했던
+> iTermLauncher 가 보임. 해당 열의 없음 텍스트를 더블 클릭해서 단축키 부여.
+
+### 참조사이트
+> [Opening a new iTerm window on OSX](https://knolleary.net/2021/02/07/opening-iterm-shortcut-osx/)
+
+---
+
 ## 터미널에서 블루투스 장치 연결하기
 ### 장치 연결 프로그램 설치
 > `brew install blueutil`
