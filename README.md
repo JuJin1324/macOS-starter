@@ -32,6 +32,18 @@
 > end run
 > ```
 
+### Safari
+> SafariLauncher
+> ```shell
+> on run {input, parameters}
+> 	tell application "Safari"
+> 		make new document with properties {URL:"http://www.youtube.com"}
+> 		activate
+> 	end tell
+> 	return input
+> end run
+> ```
+
 ### 참조사이트
 > [Opening a new iTerm window on OSX](https://knolleary.net/2021/02/07/opening-iterm-shortcut-osx/)
 
