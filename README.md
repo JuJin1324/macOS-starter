@@ -1,6 +1,16 @@
 # macOS-Starter
 > macOS에서 웹 개발에 필요한 환경 잡기 및 지식 정리
 
+## 앱 마다 입력 소스 자동 변경하기
+### input-source-pro
+> ```shell
+> brew install input-source-pro
+> ```
+> **설정**   
+> * 앱을 실행한 후 일반 탭에서 고급 모드 활성화, 표시기 트리거에서 키보드 전환 시 표시만 활성화
+> * 앱 규칙 탭에서 intelliJ 및 iTerm 에 기본 입력 소스에 ABC 설정
+> * 브라우저 규칙에서 주소창의 기본 키보드 ABC
+
 ## 맥에서 단축키로 앱 열기
 ### iTerm2
 > 1.Automator 앱 열기

@@ -40,4 +40,6 @@ brew install --cask vmware-fusion
 brew install --cask postman
 # mycli
 brew install mycli
+# input-source-pro
+brew install input-source-pro
 
