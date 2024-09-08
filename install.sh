@@ -43,3 +43,10 @@ brew install mycli
 # input-source-pro
 brew install input-source-pro
 
+# Workflows
+mv workflows/FinderLauncher.workflow ~/Library/Services/
+mv workflows/FinderLauncher2.workflow ~/Library/Services/
+mv workflows/iTermLauncher.workflow ~/Library/Services/
+mv workflows/iTermLauncher2.workflow ~/Library/Services/
+mv workflows/SafariLauncher.workflow ~/Library/Services/
+mv workflows/SafariLauncher2.workflow ~/Library/Services/
