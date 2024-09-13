@@ -166,3 +166,17 @@ alias bl="brew list"
 export JAVA_HOME_11=$(/usr/libexec/java_home -v11)
 export JAVA_HOME_8=$(/usr/libexec/java_home -v1.8)
 export JAVA_HOME=$JAVA_HOME_11
+
+# internal ssh
+export MY_MACBOOK_IP=192.168.0.13
+alias ssh-mac="ssh -i id_rsa jujin@$MY_MACBOOK_IP"
+
+# bluetooth connect
+## Connect to Beats pro Headset
+alias ctbh='blueutil --connect A4:16:C0:6B:8F:DA'
+alias ctap='blueutil --connect 04:99:B9:44:AD:D5'
+alias btl='system_profiler SPBluetoothDataType'
+alias cthk='blueutil --connect 20:18:5B:27:DE:7D'
+
+ # System Profiler
+alias catusb='system_profiler SPUSBDataType > ~/usb.info'
