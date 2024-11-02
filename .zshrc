@@ -163,9 +163,15 @@ alias bs="brew services"
 alias bl="brew list"
 
 # Java
+# Java
+## Corretto 11
 export JAVA_HOME_11=$(/usr/libexec/java_home -v11)
+## Corretto 8
 export JAVA_HOME_8=$(/usr/libexec/java_home -v1.8)
+## JAVA_HOME Setting
+### for using latest corretto, just comment all JAVA_HOME=$JAVA_HOME_XX then terminal will use latest corretto
 export JAVA_HOME=$JAVA_HOME_11
+#export JAVA_HOME=$JAVA_HOME_8
 
 # internal ssh
 export MY_MACBOOK_IP=192.168.0.13
