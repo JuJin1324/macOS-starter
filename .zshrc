@@ -186,3 +186,11 @@ alias cthk='blueutil --connect 20:18:5B:27:DE:7D'
 
  # System Profiler
 alias catusb='system_profiler SPUSBDataType > ~/usb.info'
+
+source ~/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.oh-my-zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.oh-my-zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# git
+alias gpl='git pull'
+alias gph='git push'
