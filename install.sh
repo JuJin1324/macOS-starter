@@ -53,6 +53,9 @@ brew install smartmontools
 brew install cpufetch
 # bat
 brew install bat
+# mac cli
+brew install wget
+sh -c "$(wget https://raw.githubusercontent.com/guarinogabriel/mac-cli/master/mac-cli/tools/install -O -)"
 
 # mas install
 mas install 1437130425
