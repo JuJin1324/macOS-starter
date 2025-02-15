@@ -1,7 +1,7 @@
 # mac 개발 툴 설치
-xcode-select --install
+#xcode-select --install
 # 홈브루 설치
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+#/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 # 블루투스 연결
 brew install blueutil
 # Github cli
@@ -11,9 +11,8 @@ brew install --cask mas
 # iTerm2
 brew install --cask iterm2
 # JDK
-brew tap homebrew/cask-versions
-brew install --cask corretto8
-brew install --cask corretto11
+brew install --cask corretto@8
+brew install --cask corretto@11
 # JetBrains Toolbox
 brew install --cask jetbrains-toolbox
 # vscode
@@ -48,9 +47,6 @@ brew install input-source-pro
 brew install microsoft-excel microsoft-word microsoft-powerpoint
 
 # Workflows
-cp workflows/FinderLauncher.workflow ~/Library/Services/
-cp workflows/FinderLauncher2.workflow ~/Library/Services/
-cp workflows/iTermLauncher.workflow ~/Library/Services/
-cp workflows/iTermLauncher2.workflow ~/Library/Services/
-cp workflows/SafariLauncher.workflow ~/Library/Services/
-cp workflows/SafariLauncher2.workflow ~/Library/Services/
+cp -r ./workflows/FinderLauncher.workflow ~/Library/Services/
+cp -r ./workflows/iTermLauncher.workflow ~/Library/Services/
+cp -r ./workflows/SafariLauncher.workflow ~/Library/Services/
