@@ -22,6 +22,8 @@ brew install --cask visual-studio-code
 brew install --cask docker
 # m-cli
 brew install m-cli
+# netcat
+brew install netcat
 # Chrome
 brew install --cask google-chrome
 # Macs Fan Control
@@ -42,11 +44,13 @@ brew install --cask postman
 brew install mycli
 # input-source-pro
 brew install input-source-pro
+# MS Office
+brew install microsoft-excel microsoft-word microsoft-powerpoint
 
 # Workflows
-mv workflows/FinderLauncher.workflow ~/Library/Services/
-mv workflows/FinderLauncher2.workflow ~/Library/Services/
-mv workflows/iTermLauncher.workflow ~/Library/Services/
-mv workflows/iTermLauncher2.workflow ~/Library/Services/
-mv workflows/SafariLauncher.workflow ~/Library/Services/
-mv workflows/SafariLauncher2.workflow ~/Library/Services/
+cp workflows/FinderLauncher.workflow ~/Library/Services/
+cp workflows/FinderLauncher2.workflow ~/Library/Services/
+cp workflows/iTermLauncher.workflow ~/Library/Services/
+cp workflows/iTermLauncher2.workflow ~/Library/Services/
+cp workflows/SafariLauncher.workflow ~/Library/Services/
+cp workflows/SafariLauncher2.workflow ~/Library/Services/
