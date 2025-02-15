@@ -1,7 +1,4 @@
-# mac 개발 툴 설치
-#xcode-select --install
-# 홈브루 설치
-#/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+## 홈브루 설치는 홈페이지에서 직접 한다.
 # 블루투스 연결
 brew install blueutil
 # Github cli

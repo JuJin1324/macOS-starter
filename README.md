@@ -312,6 +312,9 @@
 > 키보드 단축키 설정  
 > 시스템 환경설정 -> 키보드 -> 키보드 단축키... -> 서비스 -> 파일 및 폴더 -> New iTerm2 Tab Here 에 F5 설정 후    
 > 아무 폴더 연 후에 F5 눌러서 해당 경로로 iterm 열리는지 확인  
+> 
+> alt 키로 단어 사이로 건너뛰기 설정  
+> Profiles -> Keys -> Key Mappings -> Presets... -> Natural Text Editing 클릭  
 
 ### Oh-My-Zsh
 > 설치 : `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
