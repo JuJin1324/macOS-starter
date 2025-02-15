@@ -45,6 +45,14 @@ brew install mycli
 brew install input-source-pro
 # MS Office
 brew install microsoft-excel microsoft-word microsoft-powerpoint
+# htop
+brew install htop
+# smartmontools
+brew install smartmontools
+# cpufetch
+brew install cpufetch
+# bat
+brew install bat
 
 # mas install
 mas install 1437130425
