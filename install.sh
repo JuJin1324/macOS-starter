@@ -46,6 +46,14 @@ brew install input-source-pro
 # MS Office
 brew install microsoft-excel microsoft-word microsoft-powerpoint
 
+# mas install
+mas install 1437130425
+mas install 425264550
+mas install 869223134
+mas install 416746898
+mas install 492835684
+mas install 1023251042
+
 # Workflows
 cp -r ./workflows/FinderLauncher.workflow ~/Library/Services/
 cp -r ./workflows/iTermLauncher.workflow ~/Library/Services/
