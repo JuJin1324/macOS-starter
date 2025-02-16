@@ -164,7 +164,6 @@ alias bs="brew services"
 alias bl="brew list"
 
 # Java
-# Java
 ## Corretto 11
 export JAVA_HOME_11=$(/usr/libexec/java_home -v11)
 ## Corretto 8
@@ -185,12 +184,8 @@ alias ctap='blueutil --connect 04:99:B9:44:AD:D5'
 alias btl='system_profiler SPBluetoothDataType'
 alias cthk='blueutil --connect 20:18:5B:27:DE:7D'
 
- # System Profiler
+# System Profiler
 alias catusb='system_profiler SPUSBDataType > ~/usb.info'
-
-source ~/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source ~/.oh-my-zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source ~/.oh-my-zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # git
 alias gpl='git pull'
