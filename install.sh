@@ -1,7 +1,4 @@
-# mac 개발 툴 설치
-xcode-select --install
-# 홈브루 설치
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+## 홈브루 설치는 홈페이지에서 직접 한다.
 # 블루투스 연결
 brew install blueutil
 # Github cli
@@ -11,9 +8,8 @@ brew install --cask mas
 # iTerm2
 brew install --cask iterm2
 # JDK
-brew tap homebrew/cask-versions
-brew install --cask corretto8
-brew install --cask corretto11
+brew install --cask corretto@8
+brew install --cask corretto@11
 # JetBrains Toolbox
 brew install --cask jetbrains-toolbox
 # vscode
@@ -22,6 +18,8 @@ brew install --cask visual-studio-code
 brew install --cask docker
 # m-cli
 brew install m-cli
+# netcat
+brew install netcat
 # Chrome
 brew install --cask google-chrome
 # Macs Fan Control
@@ -42,11 +40,29 @@ brew install --cask postman
 brew install mycli
 # input-source-pro
 brew install input-source-pro
+# MS Office
+brew install microsoft-excel microsoft-word microsoft-powerpoint
+# htop
+brew install htop
+# smartmontools
+brew install smartmontools
+# cpufetch
+brew install cpufetch
+# bat
+brew install bat
+# mac cli
+brew install wget
+sh -c "$(wget https://raw.githubusercontent.com/guarinogabriel/mac-cli/master/mac-cli/tools/install -O -)"
+
+# mas install
+mas install 1437130425
+mas install 425264550
+mas install 869223134
+mas install 416746898
+mas install 492835684
+mas install 1023251042
 
 # Workflows
-mv workflows/FinderLauncher.workflow ~/Library/Services/
-mv workflows/FinderLauncher2.workflow ~/Library/Services/
-mv workflows/iTermLauncher.workflow ~/Library/Services/
-mv workflows/iTermLauncher2.workflow ~/Library/Services/
-mv workflows/SafariLauncher.workflow ~/Library/Services/
-mv workflows/SafariLauncher2.workflow ~/Library/Services/
+cp -r ./workflows/FinderLauncher.workflow ~/Library/Services/
+cp -r ./workflows/iTermLauncher.workflow ~/Library/Services/
+cp -r ./workflows/SafariLauncher.workflow ~/Library/Services/
