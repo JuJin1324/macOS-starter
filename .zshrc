@@ -147,6 +147,7 @@ alias safari="open -a \"Safari\" https://www.youtube.com"
 # Applications
 alias figma="open -a \"Figma\""
 alias kakao="open -a \"KaKaoTalk\""
+alias vscode="open -a \"Visual Studio Code\""
 
 # Finder
 alias cdtf="cd /Volumes/T5_2TB"
