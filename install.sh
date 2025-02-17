@@ -66,3 +66,4 @@ mas install 1023251042
 cp -r ./workflows/FinderLauncher.workflow ~/Library/Services/
 cp -r ./workflows/iTermLauncher.workflow ~/Library/Services/
 cp -r ./workflows/SafariLauncher.workflow ~/Library/Services/
+cp -r ./workflows/ChromeLauncher.workflow ~/Library/Services/
