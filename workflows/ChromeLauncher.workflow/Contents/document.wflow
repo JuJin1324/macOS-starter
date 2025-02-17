@@ -51,7 +51,7 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>source</key>
-					<string>on run {input, parameters}	tell application "Google Chrome"		make new tab at end of tabs of window 1 with properties {URL:"http://www.google.com"}		activate	end tell	return inputend run</string>
+					<string>on run {input, parameters}	tell application "Google Chrome"		make new window		tell window 1 -- 새로 만들어진 창을 지정 (가장 최근 창)			make new tab with properties {URL:"http://www.google.com"}		end tell		activate	end tell	return inputend run</string>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.RunScript</string>
@@ -102,8 +102,6 @@ end run</string>
 						<string>0</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<integer>1</integer>
 				<key>location</key>
