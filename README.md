@@ -2,6 +2,10 @@
 > macOS에서 웹 개발에 필요한 환경 잡기 및 지식 정리
 
 ## 자바 버전 관리
+> 자바 버전 관리 관리자는 asdf 와 VersionFox 가 있다.  
+> asdf 가 기능은 더 풍부하지만 리눅스와 맥OS 만 지원하며, VersionFox 는 보다 폭넓게 윈도우까지 지원한다.  
+> 그래서 목적에 따라서 설치하면 될 듯하다.  
+
 ### asdf 설치
 > ```shell
 > brew install asdf
@@ -28,12 +32,41 @@
 
 ### 각 프로젝트 별 버전 설정
 > ```shell
+> # 프로젝트 디렉터리로 이동
 > cd ~/<project directory>
-> vi .tool-versions
-> java corretto-<version>
-> wq
+> # 프로젝트에 자바 버전 설정: .tool-versions 파일 자동 생성해줌
+> asdf set java corretto-<version>
 > ```
 > .tool-versions 파일만 프로젝트 디렉터리 최상단에 만들면 asdf 가 파일을 인식해서 java 버전을 적용한다.
+
+### VersionFox 설치
+> ```shell
+> brew install vfox
+> echo 'eval "$(vfox activate zsh)"' >> ~/.zshrc
+> source ~/.zshrc
+> vfox add java
+> ```
+
+### VersionFox 로 자바 설치
+> asdf 로 설치된 자바만 asdf 로 관리할 수 있음. asdf 는 자바의 버전을 정확히 지정해야하며 설치된 자바 버전을 업데이트하는 기능은 없음.
+> ```shell
+> # java(amazon corretto) 찾아서 설치
+> vfox search java amzn
+> # 설치된 java 확인
+> vfox list java
+> # 전역으로 사용할 자바 버전 설정
+> vfox use -g java
+> # 설정 확인
+> vfox current java
+> ```
+
+### 각 프로젝트 별 버전 설정
+> ```shell
+> # 프로젝트 디렉터리로 이동
+> cd ~/<project directory>
+> # 프로젝트에 자바 버전 설정: .tool-versions 파일 자동 생성해줌
+> vfox use -p java@8.0.442+6-amzn
+> ```
 
 ---
 

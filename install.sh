@@ -57,10 +57,17 @@ brew install lazydocker
 # git tui information checker
 brew install lazygit
 # manage java versions
-brew install asdf
-asdf plugin add java
-echo "# manage java versions " >> ~/.zshrc
-echo ". \$(brew --prefix asdf)/libexec/asdf.sh" >> ~/.zshrc
+## asdf
+#brew install asdf
+#asdf plugin add java
+#echo "# manage java versions " >> ~/.zshrc
+#echo ". \$(brew --prefix asdf)/libexec/asdf.sh" >> ~/.zshrc
+#source ~/.zshrc
+
+## VersionFox
+brew install vfox
+vfox add java
+echo 'eval "$(vfox activate zsh)"' >> ~/.zshrc
 source ~/.zshrc
 
 # mas install
