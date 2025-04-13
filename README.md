@@ -86,6 +86,9 @@
 > vfox current gradle
 > ```
 
+### 사용가능한 플러그인 확인
+> https://vfox.dev/plugins/available.html
+
 ---
 
 ## 앱 마다 입력 소스 자동 변경하기
