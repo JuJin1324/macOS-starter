@@ -65,7 +65,25 @@
 > # 프로젝트 디렉터리로 이동
 > cd ~/<project directory>
 > # 프로젝트에 자바 버전 설정: .tool-versions 파일 자동 생성해줌
-> vfox use -p java@8.0.442+6-amzn
+> vfox use java@8.0.442+6-amzn
+> ```
+
+### VersionFox 로 maven 관리
+> ```shell
+> vfox add maven
+> vfox search maven
+> vfox use -g maven
+> vfox use maven@<version>
+> vfox current maven
+> ```
+
+### VersionFox 로 Gradle 관리
+> ```shell
+> vfox add gradle
+> vfox search gradle
+> vfox use -g gradle
+> vfox use gradle@<version>
+> vfox current gradle
 > ```
 
 ---
