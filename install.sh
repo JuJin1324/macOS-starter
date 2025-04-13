@@ -7,9 +7,6 @@ brew install gh
 brew install --cask mas
 # iTerm2
 brew install --cask iterm2
-# JDK
-brew install --cask corretto@8
-brew install --cask corretto@11
 # JetBrains Toolbox
 brew install --cask jetbrains-toolbox
 # vscode
@@ -53,6 +50,18 @@ brew install bat
 # mac cli
 brew install wget
 sh -c "$(wget https://raw.githubusercontent.com/guarinogabriel/mac-cli/master/mac-cli/tools/install -O -)"
+# check system info
+brew install fastfetch
+# docker tui information checker
+brew install lazydocker
+# git tui information checker
+brew install lazygit
+# manage java versions
+brew install asdf
+asdf plugin add java
+echo "# manage java versions " >> ~/.zshrc
+echo ". \$(brew --prefix asdf)/libexec/asdf.sh" >> ~/.zshrc
+source ~/.zshrc
 
 # mas install
 mas install 1437130425

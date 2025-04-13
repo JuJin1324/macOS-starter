@@ -1,6 +1,42 @@
 # macOS-Starter
 > macOS에서 웹 개발에 필요한 환경 잡기 및 지식 정리
 
+## 자바 버전 관리
+### asdf 설치
+> ```shell
+> brew install asdf
+> echo "# manage java versions " >> ~/.zshrc
+> echo ". \$(brew --prefix asdf)/libexec/asdf.sh" >> ~/.zshrc
+> source ~/.zshrc
+> asdf plugin add java
+> ```
+
+### asdf 로 자바 설치
+> asdf 로 설치된 자바만 asdf 로 관리할 수 있음. asdf 는 자바의 버전을 정확히 지정해야하며 설치된 자바 버전을 업데이트하는 기능은 없음.
+> ```shell
+> # corretto 찾기
+> asdf list all java | grep corretto
+> # 설치
+> asdf install java corretto-<version>
+> # 설치된 java 확인
+> asdf list java
+> # 전역으로 사용할 자바 버전 설정
+> asdf set --home java corretto-<version>
+> # 설정 확인
+> asdf current java
+> ```
+
+### 각 프로젝트 별 버전 설정
+> ```shell
+> cd ~/<project directory>
+> vi .tool-versions
+> java corretto-<version>
+> wq
+> ```
+> .tool-versions 파일만 프로젝트 디렉터리 최상단에 만들면 asdf 가 파일을 인식해서 java 버전을 적용한다.
+
+---
+
 ## 앱 마다 입력 소스 자동 변경하기
 ### input-source-pro
 > ```shell
@@ -156,6 +192,7 @@
 ### Homebrew
 > `bs`: brew services  
 > `bl`: brew list  
+> `bi`: brew install
 
 ---
 
