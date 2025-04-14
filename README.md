@@ -86,6 +86,13 @@
 > vfox current gradle
 > ```
 
+### VersionFox .tool-versions 관리
+> ```shell
+> vi .tool-versions
+> # java <버전>
+> java 11.0.26+4-amzn
+> ```
+
 ### 사용가능한 플러그인 확인
 > https://vfox.dev/plugins/available.html
 
