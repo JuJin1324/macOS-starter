@@ -173,6 +173,7 @@ alias cthk='blueutil --connect 20:18:5B:27:DE:7D'
 
 # System Profiler
 alias catusb='system_profiler SPUSBDataType > ~/usb.info'
+alias catssd='smartctl -a /dev/disk0 > ~/ssd.info'
 
 # git
 alias gpl='git pull'
