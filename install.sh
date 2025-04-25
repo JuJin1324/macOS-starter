@@ -27,8 +27,8 @@ brew install --cask appcleaner
 brew install --cask drawio
 # notion
 brew install --cask notion
-# clipy
-brew install --cask clipy
+# maccy
+brew install --cask maccy
 # postman
 brew install --cask postman
 # mycli
