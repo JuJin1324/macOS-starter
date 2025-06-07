@@ -194,7 +194,7 @@ alias cthk='blueutil --connect XX:XX:XX:XX:XX:XX'
 
 # System Profiler
 alias catusb='system_profiler SPUSBDataType > ~/usb.info'
-alias catssd='smartctl -a /dev/disk0 > ssd.info'
+alias catssd='smartctl -a /dev/disk0 > ~/ssd.info'
 
 # move to T5
 alias mvtf="find ~/Downloads -type f -name '*.mp4' -exec mv {} /Volumes/T5_2TB/Download_at_Data/SQL/mysql-5.5.21 \;"

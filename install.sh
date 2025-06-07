@@ -27,24 +27,18 @@ brew install --cask appcleaner
 brew install --cask drawio
 # notion
 brew install --cask notion
-# clipy
-brew install --cask clipy
-# vmware fusion
-brew install --cask vmware-fusion
+# maccy
+brew install --cask maccy
 # postman
 brew install --cask postman
 # mycli
 brew install mycli
 # input-source-pro
 brew install input-source-pro
-# MS Office
-brew install microsoft-excel microsoft-word microsoft-powerpoint
 # htop
 brew install htop
 # smartmontools
 brew install smartmontools
-# cpufetch
-brew install cpufetch
 # bat
 brew install bat
 # mac cli
@@ -71,6 +65,7 @@ echo 'eval "$(vfox activate zsh)"' >> ~/.zshrc
 source ~/.zshrc
 
 # mas install
+mas install 441258766
 mas install 1437130425
 mas install 425264550
 mas install 869223134
@@ -83,3 +78,8 @@ cp -r ./workflows/FinderLauncher.workflow ~/Library/Services/
 cp -r ./workflows/iTermLauncher.workflow ~/Library/Services/
 cp -r ./workflows/SafariLauncher.workflow ~/Library/Services/
 cp -r ./workflows/ChromeLauncher.workflow ~/Library/Services/
+
+# vmware fusion
+brew install --cask vmware-fusion
+# MS Office
+brew install microsoft-excel microsoft-word microsoft-powerpoint
