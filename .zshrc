@@ -114,8 +114,6 @@ source $ZSH/oh-my-zsh.sh
 source ~/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.oh-my-zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-source ~/.oh-my-zsh/custom/themes/powerlevel10k/powerlevel10k.zsh-theme
-
 # system alias
 alias sdnow="sudo shutdown -h now"
 alias rdnow="sudo shutdown -r now"
@@ -123,8 +121,13 @@ alias edz="vi ~/.zshrc"
 alias srz="source ~/.zshrc"
 alias eall="mac eject-all"
 alias tmsbp="tmutil startbackup"
-alias iall="idea;webstorm;datagrip"
+alias jall="idea;webstorm;datagrip"
 alias dul="diskutil list"
+alias spnow="pmset displaysleepnow"
+
+# 자바 
+## 메모리 설정 최적화
+export JAVA_OPTS="-Xmx8g -Xms4g"
 
 # chrome favorites
 #alias infl="open -a \"Google Chrome\" https://www.inflearn.com"
@@ -144,36 +147,92 @@ alias safari="open -a \"Safari\" https://www.youtube.com"
 #alias iptime="open -a \"Safari\" http://192.168.0.1"
 #alias afree="open -a \"Safari\" https://www.afreecatv.com"
 
-# Applications
+# application
 alias figma="open -a \"Figma\""
 alias kakao="open -a \"KaKaoTalk\""
+alias od="open -a \"Docker Desktop\""
+alias excel="open -a \"Microsoft Excel\""
 alias vscode="open -a \"Visual Studio Code\""
+alias edge="open -a \"Microsoft Edge Beta\""
 
-# Finder
+# finder
 alias cdtf="cd /Volumes/T5_2TB"
+alias cdts="cd /Volumes/T7_2TB"
 alias cdwn="cd ~/Downloads"
 alias cdev="cd ~/Documents/dev"
 alias cdsk="cd ~/Desktop"
 
-# Docker
+# ranger
+alias rg="ranger"
+alias rgtf="ranger --selectfile=/Volumes/T5_2TB"
+alias rgdwn="ranger --selectfile=~/Downloads"
+alias rgdsk="ranger --selectfile=~/Desktop"
+
+# docker
 alias dp="docker ps"
 alias dl="docker logs"
 
-# Homebrew
+# brew
 alias bs="brew services"
 alias bl="brew list"
 alias bi="brew install"
 
+# git
+alias gpl="git pull"
+alias gph="git push"
+
+# internal ssh
+export MY_MACBOOK_IP=192.168.0.xxx
+alias ssh-mac="ssh -i id_rsa username@$MY_MACBOOK_IP"
+
 # bluetooth connect
-## Connect to Beats pro Headset
-alias ctbh='blueutil --connect A4:16:C0:6B:8F:DA'
-alias ctap='blueutil --connect 04:99:B9:44:AD:D5'
+## Connect to Bluetooth devices (replace with your device MAC addresses)
+alias ctbh='blueutil --connect XX:XX:XX:XX:XX:XX'
+alias ctap='blueutil --connect XX:XX:XX:XX:XX:XX'
 alias btl='system_profiler SPBluetoothDataType'
-alias cthk='blueutil --connect 20:18:5B:27:DE:7D'
+alias cthk='blueutil --connect XX:XX:XX:XX:XX:XX'
 
 # System Profiler
 alias catusb='system_profiler SPUSBDataType > ~/usb.info'
+alias catssd='smartctl -a /dev/disk0 > ssd.info'
 
-# git
-alias gpl='git pull'
-alias gph='git push'
+# move to T5
+alias mvtf="find ~/Downloads -type f -name '*.mp4' -exec mv {} /Volumes/T5_2TB/Download_at_Data/SQL/mysql-5.5.21 \;"
+
+eval "$(vfox activate zsh)"
+
+# Added by Windsurf
+export PATH="~/.codeium/windsurf/bin:$PATH"
+
+# Google Gemini API Key (set in environment)
+# export AI_API_KEY="your_api_key_here"
+
+# ================================
+# 터미널 환경 최적화 설정
+# ================================
+
+# Modern CLI Tools Aliases
+alias ls="eza --icons"
+alias ll="eza -l --icons --git"
+alias la="eza -la --icons --git" 
+alias lt="eza --tree --level=2 --icons"
+alias cat="bat --style=auto"
+
+# Development Aliases  
+alias mvnci="mvn clean install"
+alias sb="./mvnw spring-boot:run"
+alias gw="./gradlew"
+alias gwbt="./gradlew bootRun"
+
+# Git shortcuts
+alias gs="git status"
+alias ga="git add" 
+alias gc="git commit"
+alias gp="git push"
+alias gl="git pull"
+
+# Claude Code shortcuts
+alias cc="claude"
+
+eval "$(zoxide init zsh)"
+eval $(thefuck --alias)
